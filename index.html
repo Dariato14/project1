@@ -15,6 +15,11 @@
         padding: 15px;
         border: 1px solid #228B22;
         background-color: #3CB371;} 
+        form {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #6B8E23;
+            border-radius: 5px;}
     </style>
 </head>
 
@@ -31,6 +36,21 @@
         </nav>
         <a href="#">Вход</a>
         <a href="#">Регистрация</a>
+        <form action="/login" method="post">
+            <h2>Вход</h2>
+            <div>
+                <label for="username">Имя пользователя:</label>
+                <input type="text" id="username" name="username" required placeholder="Введите имя пользователя">
+                 <span class="error" id="username-error" ></span>
+            </div>
+            <div>
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required placeholder="Введите пароль">
+                <span class="error" id="password-error"></span>
+            </div>
+            <button type="submit">Войти</button>
+        </form>
+        
     </header>
     <main>
         <aside> 
