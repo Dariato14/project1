@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 </html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,
@@ -10,23 +8,54 @@
     <title>Инвестиции</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
-    <style>aside {
+    <style>
+        header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;}
+        nav {
+            display: flex; 
+            justify-content: space-around; 
+             list-style: none;
+             padding: 0;
+             margin: 0;}
+             nav li {margin: 0 10px; }
+        .center-text {text-align: center;}
+        main {padding: 20px; }
+            .hero {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #e0e0e0;}
+        .hero h2{ font-size:2em }
+    aside {
+        float: right;
+        width: 200px;
         flex: 1;
-        padding: 15px;
+        padding: 20px;
         border: 1px solid #228B22;
-        background-color: #3CB371;} 
+        background-color: #3CB371;
+        box-sizing: border-box;} 
         form {
             width: 300px;
             padding: 20px;
             border: 1px solid #6B8E23;
             border-radius: 5px;}
+            footer {
+            background-color: #333;
+            color: #008B8B;
+            text-align: center;
+            padding: 10px;}
     </style>
 </head>
 
 <body>
     <header>
         <img src="images/logo.png" alt="" width="100">
-        <h1>Название сайта</h1>
+        <div class="center-text">
+        <h1>Ивестирование</h1>
+    </div>
         <nav>
             <ul>
                 <li><a href="#home">Главная</a></li>
@@ -36,23 +65,33 @@
         </nav>
         <a href="#">Вход</a>
         <a href="#">Регистрация</a>
-        <form action="/login" method="post">
-            <h2>Вход</h2>
-            <div>
-                <label for="username">Имя пользователя:</label>
-                <input type="text" id="username" name="username" required placeholder="Введите имя пользователя">
-                 <span class="error" id="username-error" ></span>
-            </div>
-            <div>
-                <label for="password">Пароль:</label>
-                <input type="password" id="password" name="password" required placeholder="Введите пароль">
-                <span class="error" id="password-error"></span>
-            </div>
-            <button type="submit">Войти</button>
-        </form>
-        
+        <form action="/submit" method="post">
+            <label for="username">Имя пользователя:</label>
+            <input type="text" id="username" name="username"
+            placeholder="Введите ваше имя">
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password"
+            placeholder="Введите пароль">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"
+            placeholder="Введите ваш email">
+            <label for="country">Страна:</label>
+            <select id="country" name="country">
+            <option value="ru">Россия</option>
+            <option value="us">США</option>
+            <option value="cn">Китай</option>
+            </select>
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" rows="5" cols="30"
+            placeholder="Введите ваше сообщение"></textarea>
+            <input type="submit" value="Отправить">
+            </form>  
     </header>
     <main>
+        <section class="hero">
+            <h2>Добро пожаловать в мир инвестиций!</h2>
+            <p>Здесь вы найдете информацию об инвестировании.</p>
+        </section>
         <aside> 
             <h2>Боковая панель</h2>
             <u1>
@@ -84,6 +123,14 @@
         <section id="home">
             <h2>Добро пожаловать</h2>
             <p>Основной контент страницы.</p>
+        </section>
+        <section id="about">
+            <h2>О нас</h2>
+            <p>Мы - команда, которая стремится распространять знания об инвестировании. Наша цель - помочь вам начать инвестировать.</p>
+        </section>
+         <section id="contact">
+            <h2>Контакты</h2>
+            <p>Вы можете связаться с нами по электронной почте: <a href="mailto:info@catbreeds.com">info@catbreeds.com</a></p>
         </section>
     </main>
     <footer>
