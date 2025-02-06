@@ -11,16 +11,19 @@
 </head>
 
 <body>
-    <header>
-        <img src="images/logo.png" alt="логотип сайта" width="100">
+    <header class="header">
+        <img class="header__logo" src="images/logo.png" alt="логотип сайта" width="100">
         <div class="center-text">
-        <h1>Ивестирование</h1>
+        <h1 class="header__title">Ивестирование</h1>
     </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Главная</a></li>
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#contact">Контакты</a></li>
+        <nav class="header__menu">
+            <ul class="menu">
+                <li class="menu__item__item--active">
+                    <a class="menu__link" href="#home">Главная</a></li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#about">О нас</a></li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#contact">Контакты</a></li>
             </ul>
         </nav>
         <a href="#">Вход</a>
@@ -47,7 +50,7 @@
             <input type="submit" value="Отправить">
             </form>  
     </header>
-    <main>
+    <main class="main">
         <section class="hero">
             <h2>Добро пожаловать в мир инвестиций!</h2>
             <p>Здесь вы найдете информацию об инвестировании.</p>
@@ -61,40 +64,40 @@
             </u1>
         </aside>
         <div class="exchange">
-            <h1>Курс валют</h1>
+            <h2 class="exchange__title">Курс валют</h2>
             <div class="image-container"> 
-                <img src="images/dollar.jpg" alt="курс доллара" width="150">   
+                <img class="exchange__image" src="images/dollar.jpg" alt="курс доллара" width="150">   
             </div>
             <div class="image-container">
-                <img src="images/euro.jpg" alt="курс евро" width="150">  
+                <img class="exchange__image" src="images/euro.jpg" alt="курс евро" width="150">  
             </div>
         </div>
         <div class="charset">
-            <h2>Графики</h2>
+            <h2 class="charset__title">Графики</h2>
             <div class="image-container">
-            <img src="images/cats.jpg" alt="график роста или падения акций компании" width="150">
-            <p>Абзац текста к этой картинке или блоку</p>
+            <img class="charset__image" src="images/cats.jpg" alt="график роста или падения акций компании" width="150">
+            <p class="charset__name">Абзац текста к этой картинке или блоку</p>
         </div>
         <div class="image-container">
-            <img src="images/cats.jpg" alt="график роста или падения акций компании" width="150">
-            <p>Абзац текста к этой картинке или блоку</p>
+            <img class="charset__image" src="images/cats.jpg" alt="график роста или падения акций компании" width="150">
+            <p class="charset__name">Абзац текста к этой картинке или блоку</p>
         </div>
         </div>
         <section id="home">
-            <h2>Добро пожаловать</h2>
-            <p>Основной контент страницы.</p>
+            <h2 class="home__title">Добро пожаловать</h2>
+            <p class="home__main">Основной контент страницы.</p>
         </section>
         <section id="about">
-            <h2>О нас</h2>
-            <p>Мы - команда, которая стремится распространять знания об инвестировании. Наша цель - помочь вам начать инвестировать.</p>
+            <h2 class="about__title">О нас</h2>
+            <p class="about__name">Мы - команда, которая стремится распространять знания об инвестировании. Наша цель - помочь вам начать инвестировать.</p>
         </section>
          <section id="contact">
-            <h2>Контакты</h2>
-            <p>Вы можете связаться с нами по электронной почте: <a href="mailto:info@catbreeds.com">info@catbreeds.com</a></p>
+            <h2 class="contact__title">Контакты</h2>
+            <p class="contact__name">Вы можете связаться с нами по электронной почте: <a href="mailto:info@catbreeds.com">info@catbreeds.com</a></p>
         </section>
     </main>
-    <footer>
-        <p>2025 Инвестиции | Все права защищены</p>
+    <footer class="footer">
+        <p class="footer__name">2025 Инвестиции | Все права защищены</p>
     </footer>
 </body>
 </html>
