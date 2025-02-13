@@ -12,10 +12,14 @@
 </head>
 
 <body>
-    <header class="header container">
+   <header class="header container">
+    <div class="header__logo-wrap" href="index.html">
         <img class="header__logo" src="images/logo.png" alt="логотип сайта" width="100">
-        <div class="center-text">
         <h1 class="header__title">Ивестирование</h1>
+    </div>
+    <div class="header__buttons">
+         <a class="header__button" href="#">Вход</a>
+         <a class="header__button" href="#">Регистрация</a>
     </div>
         <nav class="header__menu">
             <ul class="menu">
@@ -27,8 +31,6 @@
                     <a class="menu__link" href="#contact">Контакты</a></li>
             </ul>
         </nav>
-        <a href="#">Вход</a>
-        <a href="#">Регистрация</a>
         <form action="/submit" method="post">
             <label for="username">Имя пользователя:</label>
             <input type="text" id="username" name="username"
