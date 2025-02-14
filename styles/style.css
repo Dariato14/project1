@@ -1,73 +1,4 @@
-.exchange{
-    display:flex;
-    align-items: center;
-    text-align: center;
-    padding: 40px 0;
-    background-color: #2E8B57;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 20px;  
-}
-.charset{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding: 40px 0;
-    background-color: #2E8B57;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 20px;
-}
-.image-container{
-    display: flex;
-    justify-content: center; 
-    flex-wrap: nowrap;
-    margin: 20px;     
-    text-align: center;    
-}
-.image-container img {
-    margin: 0 10px;
-    max-width: 100%; 
-    height: auto; 
-}
-header {
-    background-color: #f0f0f0;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;}
-nav {
-    display: flex; 
-    justify-content: space-around; 
-     list-style: none;
-     padding: 0;
-     margin: 0;}
-     nav li {margin: 0 10px; }
-.center-text {text-align: center;}
-main {padding: 20px; }
-    .hero {
-    text-align: center;
-    padding: 40px 0;
-    background-color: #e0e0e0;}
-.hero h2{ font-size:2em }
-aside {
-float: right;
-width: 200px;
-flex: 1;
-padding: 20px;
-border: 1px solid #228B22;
-background-color: #3CB371;
-box-sizing: border-box;} 
-form {
-    width: 300px;
-    padding: 20px;
-    border: 1px solid #6B8E23;
-    border-radius: 5px;}
-    footer {
-    background-color: #333;
-    color: #008B8B;
-    text-align: center;
-    padding: 10px;}
+
 
 /* Подключение шрифтов */
 @import "fonts.css";
@@ -79,3 +10,85 @@ form {
 @import "footer.css";
 /* Подключение стилей относящихся к main */
 @import "main.css";
+
+.exchange {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0;
+    background-color: #2E8B57;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.charset {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0;
+    background-color: #2E8B57;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 20px;
+    text-align: center;
+}
+
+.image-container img {
+    margin: 0 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.center-text {
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #e0e0e0;
+}
+
+.hero h2 {
+    font-size: 2em
+}
+
+aside {
+    float: right;
+    width: 200px;
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #228B22;
+    background-color: #3CB371;
+    box-sizing: border-box;
+}
+
+form {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #6B8E23;
+    border-radius: 5px;
+}
+

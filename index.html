@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 </html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,
@@ -8,57 +10,59 @@
     <title>Инвестиции</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
-    <script src="script.js" defer></script>
+
 </head>
 
 <body>
-   <header class="header container">
-    <div class="header__logo-wrap" href="index.html">
-        <img class="header__logo" src="images/logo.png" alt="логотип сайта" width="100">
-        <h1 class="header__title">Ивестирование</h1>
-    </div>
-    <div class="header__buttons">
-         <a class="header__button" href="#">Вход</a>
-         <a class="header__button" href="#">Регистрация</a>
-    </div>
+    <header class="header container">
+        <div class="header__left">
+
+        
+        <div class="header__logo-wrap" href="index.html">
+            <img class="header__logo" src="images/logo.png" alt="логотип сайта" width="100">
+            <h1 class="header__title">Ивестирование</h1>
+        </div>
+        <div class="header__buttons">
+            <a class="header__button" href="#">Вход</a>
+            <a class="header__button" href="#">Регистрация</a>
+        </div>
         <nav class="header__menu">
             <ul class="menu">
                 <li class="menu__item__item--active">
-                    <a class="menu__link" href="#home">Главная</a></li>
+                    <a class="menu__link" href="#home">Главная</a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#about">О нас</a></li>
+                    <a class="menu__link" href="#about">О нас</a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#contact">Контакты</a></li>
+                    <a class="menu__link" href="#contact">Контакты</a>
+                </li>
             </ul>
-        </nav>
-        <form action="/submit" method="post">
+        </nav></div>
+        <form action="/submit" method="post" class="header__right">
             <label for="username">Имя пользователя:</label>
-            <input type="text" id="username" name="username"
-            placeholder="Введите ваше имя">
+            <input type="text" id="username" name="username" placeholder="Введите ваше имя">
             <label for="password">Пароль:</label>
-            <input type="password" id="password" name="password"
-            placeholder="Введите пароль">
+            <input type="password" id="password" name="password" placeholder="Введите пароль">
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email"
-            placeholder="Введите ваш email">
+            <input type="email" id="email" name="email" placeholder="Введите ваш email">
             <label for="country">Страна:</label>
             <select id="country" name="country">
-            <option value="ru">Россия</option>
-            <option value="us">США</option>
-            <option value="cn">Китай</option>
+                <option value="ru">Россия</option>
+                <option value="us">США</option>
+                <option value="cn">Китай</option>
             </select>
             <label for="message">Сообщение:</label>
-            <textarea id="message" name="message" rows="5" cols="30"
-            placeholder="Введите ваше сообщение"></textarea>
+            <textarea id="message" name="message" rows="5" cols="30" placeholder="Введите ваше сообщение"></textarea>
             <input type="submit" value="Отправить">
-            </form>  
+        </form>
     </header>
-    <main class="main container"> 
+    <main class="main container">
         <section class="hero">
             <h2>Добро пожаловать в мир инвестиций!</h2>
             <p>Здесь вы найдете информацию об инвестировании.</p>
         </section>
-        <aside> 
+        <aside>
             <h2>Боковая панель</h2>
             <u1>
                 <li>Ссылка 1</li>
@@ -68,39 +72,44 @@
         </aside>
         <div class="exchange">
             <h2 class="exchange__title">Курс валют</h2>
-            <div class="image-container"> 
-                <img class="exchange__image" src="images/dollar.jpg" alt="курс доллара" width="150">   
+            <div class="image-container">
+                <img class="exchange__image" src="images/dollar.jpg" alt="курс доллара" width="150">
             </div>
             <div class="image-container">
-                <img class="exchange__image" src="images/euro.jpg" alt="курс евро" width="150">  
+                <img class="exchange__image" src="images/euro.jpg" alt="курс евро" width="150">
             </div>
         </div>
         <div class="charset">
             <h2 class="charset__title">Графики</h2>
             <div class="image-container">
-            <img class="charset__image" src="images/cats.jpg" alt="график роста или падения акций компании" width="150">
-            <p class="charset__name">Абзац текста к этой картинке или блоку</p>
-        </div>
-        <div class="image-container">
-            <img class="charset__image" src="images/cats.jpg" alt="график роста или падения акций компании" width="150">
-            <p class="charset__name">Абзац текста к этой картинке или блоку</p>
-        </div>
+                <img class="charset__image" src="images/cats.jpg" alt="график роста или падения акций компании"
+                    width="150">
+                <p class="charset__name">Абзац текста к этой картинке или блоку</p>
+            </div>
+            <div class="image-container">
+                <img class="charset__image" src="images/cats.jpg" alt="график роста или падения акций компании"
+                    width="150">
+                <p class="charset__name">Абзац текста к этой картинке или блоку</p>
+            </div>
         </div>
         <section id="home">
             <h2 class="home__title">Добро пожаловать</h2>
             <p class="home__main">Основной контент страницы.</p>
         </section>
-        <section id="about">
+        <section class="about">
             <h2 class="about__title">О нас</h2>
-            <p class="about__name">Мы - команда, которая стремится распространять знания об инвестировании. Наша цель - помочь вам начать инвестировать.</p>
+            <p class="about__name">Мы - команда, которая стремится распространять знания об инвестировании. Наша цель -
+                помочь вам начать инвестировать.</p>
         </section>
-         <section id="contact">
+        <section id="contact">
             <h2 class="contact__title">Контакты</h2>
-            <p class="contact__name">Вы можете связаться с нами по электронной почте: <a href="mailto:info@catbreeds.com">info@catbreeds.com</a></p>
+            <p class="contact__name">Вы можете связаться с нами по электронной почте: <a
+                    href="mailto:info@catbreeds.com">info@catbreeds.com</a></p>
         </section>
     </main>
     <footer class="footer container">
         <p class="footer__name">2025 Инвестиции | Все права защищены</p>
     </footer>
 </body>
+
 </html>
