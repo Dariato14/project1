@@ -10,13 +10,14 @@
 @import "footer.css";
 /* Подключение стилей относящихся к main */
 @import "main.css";
+@import "media.css";
 
 .exchange {
     display: flex;
     align-items: center;
     text-align: center;
     padding: 40px 0;
-    background-color: #2E8B57;
+    background-color: #f370b1;
     justify-content: center;
     flex-wrap: wrap;
     margin: 20px;
@@ -27,7 +28,7 @@
     align-items: center;
     text-align: center;
     padding: 40px 0;
-    background-color: #2E8B57;
+    background-color: #f370b1;
     justify-content: center;
     flex-wrap: wrap;
     margin: 20px;
@@ -68,7 +69,7 @@ main {
 .hero {
     text-align: center;
     padding: 40px 0;
-    background-color: #e0e0e0;
+    background-color: #f596c5;
 }
 
 .hero h2 {
@@ -80,15 +81,15 @@ aside {
     width: 200px;
     flex: 1;
     padding: 20px;
-    border: 1px solid #228B22;
-    background-color: #3CB371;
+    border: 1px solid #f596c5;
+    background-color: #f596c5;
     box-sizing: border-box;
 }
 
 form {
     width: 300px;
     padding: 20px;
-    border: 1px solid #6B8E23;
+    border: 1px solid #f370b1;
     border-radius: 5px;
 }
 
