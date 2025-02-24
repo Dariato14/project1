@@ -20,7 +20,8 @@
    }   
    .header__logo-wrap{
     text-decoration: none;
-    color: rgba(248, 16, 179, 0.781);
+    color: rgba(247, 43, 175, 0.975);
+    font-family: "Montserrat"
    }
    .header__title{
     margin: 0;
@@ -32,6 +33,7 @@
      background-color: rgb(252, 126, 179);
      color: rgb(255, 255, 255);
      text-decoration: none;
+     border: 2px solid #fff;
     } 
     .header{
         display: flex;
@@ -54,13 +56,14 @@
     .header__button {
         transition: background-color 0.3s,
         color 0.3s;
+        border-radius: 5px;
        }
        .header__button:hover {
-        background-color: #f370b1;
+        background-color: #9a0a52;
         color: #ffffff;
        }
        .header__button:active {
-        background-color: #f370b1;
+        background-color: #940c50;
         color: #ffffff;
        }
        .menu__link {
@@ -70,8 +73,56 @@
        .menu__link {
         background-color: #f370b1;
         color: #ffffff;
+        border-radius: 5px;
+        border: 2px solid #fff;
        }
        .menu__link {
         background-color: #f370b1;
         color: #ffffff;
        }
+       .menu__link:hover {
+        background-color: #9a0a52;
+        color: #ffffff;
+       }
+       form {
+        width: 300px;
+        padding: 20px;
+        border: 1px solid #f370b1;
+        border-radius: 5px;
+    }
+    main {
+    padding: 20px;
+}
+header {
+    background-color: hsl(0, 0%, 94%);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-form{
+    display: flex; /* гибкое отображение */
+    flex-direction: column; /* поставим все элементы вертикально*/
+    gap: 5px; /*добавим отступы между элементами */
+    width: 300px; /*укажем ширину всей формы*/
+    padding: 20px;
+    border: 1px solid #f370b1;
+    border-radius: 5px;
+  }
+.search-form input{
+    padding: 5px;
+    border-radius: 8px;
+    }
+.search-form textarea{
+        padding: 5px;
+        border-radius: 8px;
+        }
+.search-form button{
+            text-decoration: none;
+            border: 2px solid #fff;
+            border-radius: 8px;
+            padding: 5px;
+            background-color: #f370b1;
+            color: white;
+            cursor: pointer;
+            }

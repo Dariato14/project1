@@ -11,10 +11,8 @@
 <body>
     <header class="header container">
         <div class="header__left">
-
-        
         <div class="header__logo-wrap" href="index.html">
-            <img class="header__logo" src="images/logo.png" alt="логотип сайта" width="100">
+            <img class="header__logo" src="images/logo2.webp" alt="логотип сайта" width="100">
             <h1 class="header__title">Kittens</h1>
         </div>
         <div class="header__buttons">
@@ -34,28 +32,17 @@
                 </li>
             </ul>
         </nav></div>
-        <form action="/submit" method="post" class="header__right">
-            <label for="username">Имя пользователя:</label>
-            <input type="text" id="username" name="username" placeholder="Введите ваше имя">
-            <label for="password">Пароль:</label>
-            <input type="password" id="password" name="password" placeholder="Введите пароль">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Введите ваш email">
-            <label for="country">Страна:</label>
-            <select id="country" name="country">
-                <option value="ru">Россия</option>
-                <option value="us">США</option>
-                <option value="cn">Китай</option>
-            </select>
-            <label for="message">Сообщение:</label>
-            <textarea id="message" name="message" rows="5" cols="30" placeholder="Введите ваше сообщение"></textarea>
-            <input type="submit" value="Отправить">
+
+        <form class="search-form"  action="/search" method="get" class="search-form">
+            <input type="text" name="q" placeholder="Поиск по сайту..." class="search-input">
+            <button type="submit" class="search-button">Найти</button>
         </form>
+        
     </header>
     <main class="main container">
         <section class="hero">
-            <h2>Добро пожаловать в мир инвестиций!</h2>
-            <p>Здесь вы найдете информацию об инвестировании.</p>
+            <h2>Добро пожаловать в мир кошек!</h2>
+            <p>Здесь вы найдете информацию о породах кошек.</p>
         </section>
         <aside>
             <h2>Боковая панель</h2>
@@ -65,45 +52,35 @@
                 <li>Ссылка 3</li>
             </ul>
         </aside>
-        <div class="exchange">
-            <h2 class="exchange__title">Курс валют</h2>
-            <div class="image-container">
-                <img class="exchange__image" src="images/dollar.jpg" alt="курс доллара" width="150">
+        <div class="card-container">
+            <div class="breeds__card">
+                <img class="breeds__image" src="images/cornish.webp" alt="Корниш-рекс" width="200">
+                <h3 class="breeds__name">Корниш-рекс</h3>
+                <p>Корниш-рексы активны и общительны, ласковые, игривые, нуждаются в контакте с человеком и не переносят одиночества. Дружелюбны, неплохо ладят с детьми и животными, но могут ревновать хозяина к другим членам семьи.</p>
             </div>
-            <div class="image-container">
-                <img class="exchange__image" src="images/euro.jpg" alt="курс евро" width="150">
+            <div class="breeds__card">
+                <img class="breeds__image" src="images/elf.webp" alt="Эльф" width="200">
+                <h3 class="breeds__name">Эльф</h3>
+                <p>Эльфы очень ласковые, дружелюбные, любят детей. Они не терпят одиночества, поэтому порода не подойдёт очень занятым людям.</p>
             </div>
-        </div>
-        <div class="charset">
-            <h2 class="charset__title">Графики</h2>
-            <div class="image-container">
-                <img class="charset__image" src="images/cats.jpg" alt="график роста или падения акций компании"
-                    width="150">
-                <p class="charset__name">Абзац текста к этой картинке или блоку</p>
-            </div>
-            <div class="image-container">
-                <img class="charset__image" src="images/cats.jpg" alt="график роста или падения акций компании"
-                    width="150">
-                <p class="charset__name">Абзац текста к этой картинке или блоку</p>
+            <div class="breeds__card">
+                <img class="breeds__image" src="images/oriental.webp" alt="Ориентальная кошка" width="150">
+                <h3 class="breeds__name">Ориентальная кошка</h3>
+                <p>Ориентальные кошки общительны и дружелюбны, нуждаются во внимании и любят находиться рядом с хозяином. Также эти кошки игривы, умны и понятливы, ладят с другими животными.</p>
             </div>
         </div>
-        <section class="home">
-            <h2 class="home__title">Добро пожаловать</h2>
-            <p class="home__main">Основной контент страницы.</p>
-        </section>
         <section class="about">
-            <h2 class="about__title">О нас</h2>
-            <p class="about__name">Мы - команда, которая стремится распространять знания об инвестировании. Наша цель -
-                помочь вам начать инвестировать.</p>
+            <h2 class="about__title"></h2>
+            <p class="about__name">Наша цель-распространить любовь к кошкам.</p>
         </section>
         <section class="contact">
-            <h2 class="contact__title">Контакты</h2>
+            <h2 class="contact__title"></h2>
             <p class="contact__name">Вы можете связаться с нами по электронной почте: <a
                     href="mailto:info@catbreeds.com">info@catbreeds.com</a></p>
         </section>
     </main>
     <footer class="footer container">
-        <p class="footer__name">2025 Инвестиции | Все права защищены</p>
+        <p class="footer__name">2025 Кошки | Все права защищены</p>
     </footer>
 </body>
 </html>

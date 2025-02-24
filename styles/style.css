@@ -12,84 +12,11 @@
 @import "main.css";
 @import "media.css";
 
-.exchange {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding: 40px 0;
-    background-color: #f370b1;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 20px;
+
+html {
+    height: 100%;
+    width: 100%;
 }
-
-.charset {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding: 40px 0;
-    background-color: #f370b1;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 20px;
+html {
+    display: block;
 }
-
-.image-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    margin: 20px;
-    text-align: center;
-}
-
-.image-container img {
-    margin: 0 10px;
-    max-width: 100%;
-    height: auto;
-}
-
-header {
-    background-color: #f0f0f0;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-
-.center-text {
-    text-align: center;
-}
-
-main {
-    padding: 20px;
-}
-
-.hero {
-    text-align: center;
-    padding: 40px 0;
-    background-color: #f596c5;
-}
-
-.hero h2 {
-    font-size: 2em
-}
-
-aside {
-    float: right;
-    width: 200px;
-    flex: 1;
-    padding: 20px;
-    border: 1px solid #f596c5;
-    background-color: #f596c5;
-    box-sizing: border-box;
-}
-
-form {
-    width: 300px;
-    padding: 20px;
-    border: 1px solid #f370b1;
-    border-radius: 5px;
-}
-
