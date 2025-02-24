@@ -17,8 +17,9 @@
         flex: 1;
         padding: 20px;
         border: 1px solid #f596c5;
-        background-color: #f596c5;
+        background-color: #ffffff;
         box-sizing: border-box;
+        color:#9a0a52;
     }
     main {
         padding: 20px;
@@ -102,4 +103,5 @@
 .contact {
     width: 100%;
     text-align: center;
+
 }  
