@@ -39,6 +39,11 @@
         font-size: 20px;
         font-weight: bold;
         text-align: center;
+        text-decoration: none; /* Убирает подчеркивание */
+        color: black; /* Устанавливает цвет текста ссылки */
+       }
+       .breeds__name:hover{ 
+        color: #9a0a52;
        }
        .card-container {
         margin: 0;

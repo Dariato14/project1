@@ -42,7 +42,17 @@
         justify-content: space-between;
         padding-top: 20px;
         padding-bottom: 20px;
+        padding: 10px 20px; /* Отступы */
+        position: fixed; /* Фиксированное позиционирование */
+        top: 0; /* Расположение вверху */
+        left: 0; /* Расположение слева */
+        width: 100%; /* Ширина на всю страницу */
+        z-index: 1000; /* Уровень наложения, чтобы шапка была поверх другого контента */
        }
+       .main {
+        margin-top: 200px; /* Отступ сверху, чтобы содержимое не перекрывалось шапкой */
+    }
+
     .header__menu{
         width: 100%;
         flex-shrink: 0;
