@@ -110,3 +110,23 @@
     text-align: center;
 
 }  
+.popular__cats__card{
+    width: 1350px;
+    margin-top: 60px;
+    display: flex;
+    gap: 40px;
+    overflow: hidden;
+}
+.popular__cats__img{
+    min-width: 360px;
+}
+.popular__cats__item{
+    width: 360px;
+    transition: 0.3s ease;
+}
+.popular__cats__link{
+    border: none;
+    margin-top: 20px;
+    color: #9a0a52;
+    cursor: pointer;
+}
