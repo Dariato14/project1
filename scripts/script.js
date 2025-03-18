@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
 let currentIndex = 0; //индекс карточек
 //объявляем переменную slider и сохраняем в нее все элементы на странице с классом treners__item
 
-    const slider = document.querySelectorAll(".treners__item");
+    const slider = document.querySelectorAll(".popular__cats__item");
 // объявляем переменную prevButton и сохраняем в нее кнопку для перехода к предыдущей группе карточек
-    const prevButton = document.querySelector(".treners__left");
+    const prevButton = document.querySelector(".popular__cats__left");
 // объявляем переменную nextButton и сохраняем в нее кнопку для перехода к следующей группе карточек
-    const nextButton = document.querySelector(".treners__right");
+    const nextButton = document.querySelector(".popular__cats__right");
 //объявлем переменную для хранения количества отображаемых карточек
     const visibleCards = 3;
 // функцию updateSlider() для первоначальной настройки отображения карточек. 
