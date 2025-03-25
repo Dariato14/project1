@@ -60,3 +60,28 @@ else {
             }
         });
     }
+
+    // ЗАДАНИЕ 3.4
+    
+ const cardsContainer = document.querySelector(".popular__cats");
+     if (cardsContainer) {
+        const dataTitleCards = [
+            "Персидская",
+            "Мейн-кун",
+            "Рэгдолл",
+            "Сиамская",
+            "Абиссинская",
+            "Британская короткошерстная",
+            "Шотландская вислоухая",
+            "Сфинкс",
+            "Ориентальная",
+        ];
+const titleCards =
+cardsContainer.querySelectorAll(".popular__cats__suptitle");
+titleCards.forEach((item, index) => {
+item.textContent = dataTitleCards[index];
+});
+}
+
+
+ 
