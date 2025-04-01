@@ -4,3 +4,97 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+.volonter{
+    background-color: #ffffff; /*фон секции*/
+    display: flex; /*Используем flexbox для выравнивания*/
+    
+    gap: 28px; /* отступы между элементами */
+    flex-wrap: wrap;
+    align-items: center; /* Центрирование по горизонтали */
+    text-align: center; /* Выравнивание текста по центру */
+        justify-content: center;
+        flex-wrap: nowrap;
+        margin: 20px;
+        text-align: center;
+}
+
+.volonter__block {
+    margin-top: 50px; /*отступ сверху*/
+    margin-bottom: 50px; /*отступ снизу*/
+    width: 100%;/* Ширина 100% от родительского элемента */
+    max-width: 516px; /*задается максимальная ширина блока*/
+}
+
+.volonter__title {
+    font-weight: 200; /* толщина шрифта.*/
+    font-size: 40px; /*размер шрифта для заголовка*/
+    line-height: 100%;/*межстрочный интервал*/
+    color: #fa0694; /*цвет заголовка*/
+}
+
+.volonter__text {
+    margin-top: 20px; /*отступ сверху*/
+    font-size: 20px; /*размер шрифта для текста*/
+    font-weight: 400; /* толщина шрифта.*/
+    color: #fff; /*цвет текста*/
+}
+.volonter__img{
+    border-radius: 50%; /* Сделать изображение круглым */
+    object-fit: cover; /* Сохранить пропорции изображения */
+    width: 200px; /* Размер изображения */
+    height: 200px; /* Размер изображения */
+
+
+}
+.applications {
+    position: fixed; /* позицинорование фиксированное */
+    top: 0; /* Элемент будет находиться на верхней границе экрана*/
+    left: 0; /* Элемент будет находиться на левой границе экрана.*/
+    width: 100%;/* Ширина 100% от окна браузера */
+    height: 100%;/* Высота 100% от окна браузера */
+    background-color: rgba(58, 60, 65, 0.7); /*задаем фон Полупрозрачный с цветом */
+}
+.application {
+    position: absolute; /* позиционируется абсолютно*/
+    top: 50%; /* верхняя часть смещена на 50% высоты родителя*/
+    left: 50%;/*левая граница смещена на 50% ширины родителя*/
+    transform: translate(-50%, -50%);/* смещаем элемент относительно его текущего положения*/
+    max-width: 800px;/* Максимальная ширина окна */
+    width: 100%;/* Ширина 100% от родительского элемента */
+    padding: 50px 20px; /* Внутренние отступы: 50px сверху и снизу, 20px слева и справа */
+    display: flex; /*Используем flexbox для выравнивания*/
+    justify-content: center; /* распределяем элементы по центру*/ 
+    align-items: center; /* выравнивание по вертикали */
+    column-gap: 64px; /* отступы между столбцами */
+    background-color: #fa70b3; /*фон модального окна*/
+    color: #fff; /*цвет текста*/
+}
+.application__title {
+    font-size: 36px; /*размер шрифта для заголовков*/
+}
+.application__text {
+    margin-top: 20px; /* Отступ сверху */
+    font-size: 20px; /*размер шрифта для текста*/
+}
+.application__form {
+    width: 500px; /*устанавливаем ширину для формы*/
+    display: flex; /*Используем flexbox для выравнивания формы в строку*/
+    flex-direction: column;
+    row-gap: 10px; /* отступы между строками */
+}
+
+.volonter__button{
+    display: inline-block;
+     padding: 10px;
+     margin: 5px;
+     background-color: rgb(252, 126, 179);
+     color: rgb(255, 255, 255);
+     text-decoration: none;
+     border: 2px solid #fff;
+     cursor: pointer;
+    } 
+.volonter__button:hover {
+        background-color: #9a0a52;
+        color: #ffffff;
+       }
