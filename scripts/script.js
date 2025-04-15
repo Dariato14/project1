@@ -106,4 +106,46 @@ window.addEventListener("click", (event) => {
     }
 });
 
+ //ЗАДАНИЕ 3.5
  
+const cardsBreeds = document.querySelector('.breeds');
+if (cardsBreeds) {
+        const cardContainer = cardsBreeds.querySelector('.card-container');
+        const cardsContainerData = {
+            breed1: {
+                image: 'src="images/savanna.jpg"',
+                name: 'Саванна',
+                price: '1 300 000 руб',
+                text: 'Саванна – близкий родственник африканского сервала. Это не только одна из самых дорогих кошек, но и одна из самых больших. При должном воспитании очень дружелюбные, прекрасно ладят с детьми. А еще они долгожители: продолжительность жизни составляет 20–25 лет.'
+            },
+           breed2: {
+                image: 'src="images/karaket.jpg"',
+                name: 'Каракет',
+                price: '900 000 руб',
+                text: 'Она была получена в результате скрещивания домашней кошки со степной рысью.Каракет – самая крупная домашняя кошка (ее вес может достигать 15 кг), она относится к полудиким породам, поэтому в содержании сильно отличается от домашних питомцев популярных пород.'
+            },
+            breed3: {
+                image: 'src="images/chauzy.jpg"',
+                name: 'Чаузи',
+                price: '1 000 000 руб',
+                text: 'Чаузи, обладая внешностью маленькой версии дикой пумы, имеет дружелюбный характер, поэтому идеальна в качестве компаньона, если не забывать о ее происхождении.Чаузи прекрасно адаптируются к жизни с человеком. Купить кошку можно по цене до 15000 долларов.'
+            }
+        }
+        const createCard = (image, price, name, text) => {
+            const card = `
+            <div class="breeds__card">
+                <img class="breeds__image">${image}</p>
+                <p class="breeds__price">${price}</p>
+                <a class="breeds__name">${name}</a>
+                <p class="breeds__text">${text}</p>             
+            </li>
+        `;
+            return card;
+        }
+        for (const cardKey in cardsContainerData) {
+            const card = cardsContainerData[cardKey];
+            const cardElement = createCard(card.image, card.price, card.text, card.name);
+            cardContainer.insertAdjacentHTML('beforeend', cardElement);
+        }
+}
+

@@ -60,7 +60,11 @@
         border-radius: 50%;
        }
        
-       
+       .breeds__price{
+        margin-top: 20px;
+        font-weight: 200;
+        font-size: 25px;
+       }
     
     .charset {
         display: flex;
