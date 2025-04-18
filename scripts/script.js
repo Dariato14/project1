@@ -106,7 +106,7 @@ window.addEventListener("click", (event) => {
     }
 });
 
- //ЗАДАНИЕ 3.5
+ //ЗАДАНИЕ 3.5 ч1
 
  // Объявляем переменную cardsBreeds и сохраняем в нее элемент с классом breeds
 const cardsBreeds = document.querySelector('.breeds');
@@ -168,7 +168,7 @@ if (cardsBreeds) {
 }
 
 
-//ЗАДАНИЕ 3.5
+//ЗАДАНИЕ 3.5 ч2
 
 const headerMenu = document.querySelector('.header__menu');
 if (headerMenu){
