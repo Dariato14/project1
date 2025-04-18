@@ -73,7 +73,7 @@ else {
             "Абиссинская",
             "Британская короткошерстная",
             "Шотландская вислоухая",
-            "Сфинкс",
+            "Канадский сфинкс",
             "Ориентальная",
         ];
 const titleCards =
@@ -107,45 +107,97 @@ window.addEventListener("click", (event) => {
 });
 
  //ЗАДАНИЕ 3.5
- 
+
+ // Объявляем переменную cardsBreeds и сохраняем в нее элемент с классом breeds
 const cardsBreeds = document.querySelector('.breeds');
+
+// Если такой элемент существует
 if (cardsBreeds) {
-        const cardContainer = cardsBreeds.querySelector('.card-container');
-        const cardsContainerData = {
-            breed1: {
-                image: 'src="images/savanna.jpg"',
-                name: 'Саванна',
-                price: '1 300 000 руб',
-                text: 'Саванна – близкий родственник африканского сервала. Это не только одна из самых дорогих кошек, но и одна из самых больших. При должном воспитании очень дружелюбные, прекрасно ладят с детьми. А еще они долгожители: продолжительность жизни составляет 20–25 лет.'
+    // Объявляем переменную breedsList и сохраняем в нее элемент с классом breeds__list, чтобы мы могли добавить новые элементы
+    const breedsList = cardsBreeds.querySelector('.breeds__list');
+
+    // Создаем объект cardsBreedsData, который содержит данные для трех карточек.
+    const cardsBreedsData = {
+        breed1: {
+            image: 'images/savanna.jpg',
+            name: 'Саванна',
+            price: '1 300 000 руб',
+            description: 'Саванна – близкий родственник африканского сервала. Это не только одна из самых дорогих кошек, но и одна из самых больших.',
+           
+        },
+        breed2: {
+            image: 'images/karaket.jpg',
+            name: 'Каракет',
+            price: '900 000 руб',
+            description: 'Каракет – самая крупная домашняя кошка, полученная в результате скрещивания домашней кошки со степной рысью.',
+            
+        },
+        breed3: {
+            image: 'images/chauzy.jpg',
+            name: 'Чаузи',
+            price: '1 000 000 руб',
+            description: 'Чаузи, обладая внешностью маленькой версии дикой пумы, имеет дружелюбный характер.',
+           
+        }
+    };
+
+    // Создаем функцию createCard, которая будет добавлять карточку. Внутри функции 4 переменные: image, name, price, description
+    const createCard = (image, name, price, description) => {
+        // Создаем переменную card, которая будет содержать HTML-код карточки и вставляем туда 4 переменные
+        const card = `
+            <div class="breeds__card">
+                <img class="breeds__image" src="${image}" alt="${name}" width="200">
+                <h3 class="breeds__name">${name}</h3>
+                <p class="breeds__price">${price}</p>
+                <p class="breeds__description">${description}</p>
+            </div>
+        `;
+        // Возвращаем значение переменной card
+        return card;
+    };
+
+    // Создаем цикл for и проходим по всем элементам объекта cardsBreedsData.
+    for (const cardKey in cardsBreedsData) {
+        // Получаем данные одной карточки из объекта cardsBreedsData 
+        const card = cardsBreedsData[cardKey];
+        // создаем переменную cardElement и вызываем функцию createCard, куда передаем изображение, название, цену, описание и кнопку
+        const cardElement = createCard(card.image, card.name, card.price, card.description, card.button);
+        // с помощью метода insertAdjacentHTML добавляем созданный HTML-код в конец списка breedsList.
+        breedsList.insertAdjacentHTML('beforeend', cardElement);
+    }
+}
+
+
+
+
+const headerMenu = document.querySelector('.header__menu');
+if (headerMenu){
+        const headerList = headerMenu.querySelector('.header__list');
+        const menuData = {
+            link1: {
+                link: '#',
+                title: 'Главная',
             },
-           breed2: {
-                image: 'src="images/karaket.jpg"',
-                name: 'Каракет',
-                price: '900 000 руб',
-                text: 'Она была получена в результате скрещивания домашней кошки со степной рысью.Каракет – самая крупная домашняя кошка (ее вес может достигать 15 кг), она относится к полудиким породам, поэтому в содержании сильно отличается от домашних питомцев популярных пород.'
+            link2: {
+                link: '#',
+                title: 'О нас',
             },
-            breed3: {
-                image: 'src="images/chauzy.jpg"',
-                name: 'Чаузи',
-                price: '1 000 000 руб',
-                text: 'Чаузи, обладая внешностью маленькой версии дикой пумы, имеет дружелюбный характер, поэтому идеальна в качестве компаньона, если не забывать о ее происхождении.Чаузи прекрасно адаптируются к жизни с человеком. Купить кошку можно по цене до 15000 долларов.'
+            link3: {
+                link: '#',
+                title: 'Контакты',
             }
         }
-        const createCard = (image, price, name, text) => {
-            const card = `
-            <div class="breeds__card">
-                <img class="breeds__image">${image}</p>
-                <p class="breeds__price">${price}</p>
-                <a class="breeds__name">${name}</a>
-                <p class="breeds__text">${text}</p>             
-            </li>
-        `;
-            return card;
+        const createLink = (UrlLink, title) =>{
+            const link = `
+            <li class="menu__item"><a href="${UrlLink}" class="menu__link">${title}</a></li>
+            `;
+            return link;
         }
-        for (const cardKey in cardsContainerData) {
-            const card = cardsContainerData[cardKey];
-            const cardElement = createCard(card.image, card.price, card.text, card.name);
-            cardContainer.insertAdjacentHTML('beforeend', cardElement);
+        for (const linkItem in menuData) {
+            const link = menuData[linkItem];
+            const linkIndex = createLink(link.UrlLink, link.title);
+            headerList.insertAdjacentHTML('beforeend', linkIndex);
+
         }
 }
 
