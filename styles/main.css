@@ -45,7 +45,7 @@
        .breeds__name:hover{ 
         color: #9a0a52;
        }
-       .card-container {
+       .breeds {
         margin: 0;
         padding: 20px 0;
         display: flex;
@@ -64,6 +64,12 @@
         margin-top: 20px;
         font-weight: 200;
         font-size: 25px;
+       }
+       .breeds__list{
+        margin-top: 5px;
+        display: flex;
+        column-gap: 20px;
+
        }
     
     .charset {

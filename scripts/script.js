@@ -1,3 +1,5 @@
+
+//ЗАДАНИЕ 3.1
 'use strict'
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -61,7 +63,7 @@ else {
         });
     }
 
-    // ЗАДАНИЕ 3.4
+    // ЗАДАНИЕ 3.4 ч1
     
  const cardsContainer = document.querySelector(".popular__cats");
      if (cardsContainer) {
@@ -82,6 +84,9 @@ titleCards.forEach((item, index) => {
 item.textContent = dataTitleCards[index];
 });
 }
+
+//ЗАДАНИЕ 3.4 ч2
+
 
 //Объявляем переменную welcоmeButtonModal и сохраняем в нее кнопку c классом welcome__button
 const welcоmeButtonModal = document.querySelector(".volonter__button");
