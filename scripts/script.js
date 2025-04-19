@@ -209,63 +209,50 @@ if (headerMenu){
 //ЗАДАНИЕ 3.6
 
 const cardsImages = document.querySelector(".images");
-    if (cardsImages) {
-        const cardListImages = cardsImages.querySelector(".images__list");
+if (cardsImages) {
+    const cardListImages = cardsImages.querySelector(".images__list");
+    const apiUrl = "images.json";
+    const createCard = (imageUrl, imageAlt, imageWidth) => {
+        const image = `
+        <li class="images__item">
+            <img class="images__picture" src="${imageUrl[0]}" alt="${imageAlt}" width="${imageWidth}">
+            <img class="images__picture" src="${imageUrl[1]}" alt="${imageAlt}" width="${imageWidth}" style="display: none;">
+        </li>
+    `;
 
-        // Пример URL для получения данных с сервера
-        const apiUrl = "images.json";
-
-        // Функция для создания карточки
-        const createCard = (imageUrl, imageAlt, imageWidth) => {
-            // Шаблонные строки и подстановки
-            const image = `
-            <li class="images__item">
-                <img class="images__picture" src="${imageUrl[0]}" alt="${imageAlt}" width="${imageWidth}">
-                <img class="images__picture" src="${imageUrl[1]}" alt="${imageAlt}" width="${imageWidth}" style="display: none;">
-            </li>
-        `;
-
-            return image;
-        };
-        // Загрузка данных с сервера
-        fetch(apiUrl)
-            .then((response) => response.json())
-            .then((images) => {
-                console.log(images); // Данные
-                console.log(typeof images); // Тип полученных данных
-
-                images.forEach((item) => {
-                    const cardElement = createCard(
-                        item.imageUrl,
-                        item.imageAlt,
-                        item.imageWidth
-                    );
-                    cardListImages.insertAdjacentHTML("beforeend", cardElement);
-                });
-                const pictures = document.querySelectorAll(".images__picture");
+        return image;
+    };
+    fetch(apiUrl)
+    .then((response) => response.json())
+    .then((images) => {
+        console.log(images); 
+        console.log(typeof images); 
+        images.forEach((item) => {
+            const cardElement = createCard(
+                item.imageUrl,
+                item.imageAlt,
+                item.imageWidth
+            );
+            cardListImages.insertAdjacentHTML("beforeend", cardElement);
+        });
+        const pictures = document.querySelectorAll(".images__picture");
 if (pictures) {
-    // Перебираем каждое изображение
     pictures.forEach((picture) => {
         picture.addEventListener("click", () => {
-            // Получаем родительский элемент (li)
             const parentItem = picture.parentElement;
-
-            // Получаем все изображения в родительском элементе
             const parentPictures =
                 parentItem.querySelectorAll(".images__picture");
-
-            // Переключаем видимость изображений
             parentPictures.forEach((siblingPicture) => {
-                if (parentPictures !== picture) {
-                    parentPictures.style.display = "block"; // Показываем другое изображение
+                if (siblingPicture !== picture) {
+                    siblingPicture.style.display = "block"; 
                 } else {
-                    parentPictures.style.display = "none"; // Скрываем текущее изображение
+                    siblingPicture.style.display = "none"; 
                 }
             });
         });
     });
 }
+     });
 
-             });
-
-    }
+}
+           
