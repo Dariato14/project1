@@ -5,7 +5,7 @@
                 "images/cutecat2.jpg"
             ],
             "imageAlt": "Котик",
-            "imageWidth": 500
+            "imageWidth": 200
     },
     {
         "imageUrl" :[
@@ -13,7 +13,7 @@
             "images/cutecat4.jpg"
         ],
         "imageAlt": "Котик",
-        "imageWidth": 500
+        "imageWidth": 200
    },
    {
     "imageUrl" :[
@@ -21,6 +21,14 @@
         "images/cutecat6.jpg"
     ],
     "imageAlt": "Котик",
-    "imageWidth": 500
+    "imageWidth": 200
+    },
+    {
+        "imageUrl" :[
+        "images/cutecat7.jpg",
+        "images/cutecat8.jpg"
+    ],
+    "imageAlt": "Котик",
+    "imageWidth": 200
     }
 ]
