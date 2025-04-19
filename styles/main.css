@@ -30,8 +30,10 @@
         width: 350px;
         text-align: center;
         padding: 15px;
-        background-color: #f596c5;
        color: black;
+       padding: 10px 30px;  /* Внутренние отступы: 10px сверху и снизу, 30px слева и справа */
+     border-radius: 20px; /* скругление углов на 20px*/
+    box-shadow: 0 8px 16px 0 rgba(246, 118, 203, 0.763);/*тень карточки*/
        }
        .breeds__name{
         margin-top: 15px;
@@ -154,13 +156,19 @@
 }
 .cat-name {
     margin-top: 5px;
+    text-align: center;
 }
 .cats{
 
     display: flex;
     flex-wrap: wrap;
 }
-
+.cat__description{
+    margin-top: 15px;
+    text-align: center;
+    color: #a6115b;
+    
+}
 
 .images__list {
     display: flex; /* Используем flexbox для выравнивания карточек в строку*/
