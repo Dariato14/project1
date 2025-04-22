@@ -73,18 +73,6 @@ intensiveImg.forEach((item, index) => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     // ЗАДАНИЕ 3.4 ч1
     
  const cardsContainer = document.querySelector(".popular__cats");
