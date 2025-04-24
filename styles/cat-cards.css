@@ -1,0 +1,24 @@
+.cat-card {
+    margin: 10px;
+}
+.cat-image {
+    width: 200px; /* Размер изображения */
+    height: 200px; /* Размер изображения */
+    border-radius: 50%; /* Сделать изображение круглым */
+    object-fit: cover; /* Сохранить пропорции изображения */
+}
+.cat-name {
+    margin-top: 5px;
+    text-align: center;
+}
+.cats{
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.cat__description{
+    margin-top: 15px;
+    text-align: center;
+    color: #a6115b;
+    
+}

@@ -13,6 +13,12 @@
 @import "media.css";
 @import "normalize.css";
 @import "preloader.css";
+@import "cat-cards.css";
+@import "images.css";
+@import "popular__cats.css";
+@import "breeds_top-3.css";
+@import "forms.css";
+@import "popup.css";
 
 html {
     height: 100%;

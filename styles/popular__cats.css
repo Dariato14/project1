@@ -1,0 +1,62 @@
+.popular__cats__card{
+    width: 1350px;
+    margin-top: 60px;
+    display: flex;
+    gap: 40px;
+    overflow: hidden;
+    
+}
+.popular__cats__img{
+    min-width: 360px;
+}
+.popular__cats__item{
+    width: 360px;
+   transition: top 0.2s linear;
+}
+.popular__cats__link{
+    border: none;
+    margin-top: 20px;
+    color: #9a0a52;
+    cursor: pointer;
+}
+
+
+.popular__cats__left{
+
+    background-color: #ff69b4; /* Цвет кнопки */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем границы */
+    border-radius: 50%; /* Форма круга */
+    padding: 10px 20px; /* Отступы */
+    cursor: pointer; /* Курсор при наведении */
+    
+    align-items: center; /* Выравнивание по центру по вертикали */
+}
+.popular__cats__right{
+
+    background-color: #ff69b4; /* Цвет кнопки */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем границы */
+    border-radius: 50%; /* Форма круга */
+    padding: 10px 20px; /* Отступы */
+    cursor: pointer; /* Курсор при наведении */
+    
+    align-items: center; /* Выравнивание по центру по вертикали */
+}
+.arrow__right {
+    display: inline-block; /* Позволяет управлять размером элемента */
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid white; /* Стрелка */
+    border-top: 5px solid transparent; 
+    border-bottom: 5px solid transparent; 
+}
+.arrow__left {
+    display: inline-block; /* Позволяет управлять размером элемента */
+    width: 0; 
+    height: 0; 
+    border-right: 10px solid white; /* Изменено с border-left на border-right */
+    border-top: 5px solid transparent; 
+    border-bottom: 5px solid transparent; 
+   
+}

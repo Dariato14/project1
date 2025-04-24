@@ -1,0 +1,53 @@
+.breeds__card{
+    width: 350px;
+    text-align: center;
+    padding: 15px;
+   color: black;
+   padding: 10px 30px;  /* Внутренние отступы: 10px сверху и снизу, 30px слева и справа */
+ border-radius: 20px; /* скругление углов на 20px*/
+box-shadow: 0 8px 16px 0 rgba(246, 118, 203, 0.763);/*тень карточки*/
+
+   }
+   .breeds__card:hover {
+    transform: scale(1.1); /* Увеличение карточки */
+    cursor: pointer;
+}
+   .breeds__name{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none; /* Убирает подчеркивание */
+    color: black; /* Устанавливает цвет текста ссылки */
+    cursor: pointer;
+   }
+   .breeds__name:hover{ 
+    color: #9a0a52;
+   }
+   .breeds {
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    gap: 20px;
+    background-color: #ffffff;
+    list-style-type: none;
+   }
+   .breeds__image{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    
+   }
+   
+   .breeds__price{
+    margin-top: 20px;
+    font-weight: 200;
+    font-size: 25px;
+   }
+   .breeds__list{
+    margin-top: 5px;
+    display: flex;
+    column-gap: 20px;
+
+   }
