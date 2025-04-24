@@ -11,7 +11,8 @@
 /* Подключение стилей относящихся к main */
 @import "main.css";
 @import "media.css";
-
+@import "normalize.css";
+@import "preloader.css";
 
 html {
     height: 100%;
