@@ -19,6 +19,7 @@
 @import "breeds_top-3.css";
 @import "forms.css";
 @import "popup.css";
+@import "animation.css";
 
 html {
     height: 100%;
