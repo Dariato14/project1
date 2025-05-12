@@ -1,43 +1,94 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,
-        initial-scale=1.0">
-        <title>Кошки</title>
-        <link rel="icon" href="images/logo2.webp" type="images/logo2.webp">
-        <link rel="shortcut icon" href="fimages/logo2.webp" type="images/logo2.webp">
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-    <header class="header container">
-        <div class="header__left">
-        <div class="header__logo-wrap" href="index.html">
-            <img class="header__logo" src="images/logo2.webp" alt="логотип сайта" width="100">
-            <h1 class="header__title">Kittens</h1>
-        </div>
-        <div class="header__buttons">
-            <a class="header__button" href="#">Вход</a>
-            <a class="header__button" href="#">Регистрация</a>
-        </div>
-        <nav class="header__menu">
-            <ul class="menu">
-                <li class="menu__item menu__item--active">
-                    <a class="menu__link" href="#home">Главная</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#about">О нас</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#contact">Контакты</a>
-                </li>
-            </ul>
-        </nav></div>
 
-        <form class="search-form"  action="/search" method="get" class="search-form">
-            <input type="text" name="q" placeholder="Поиск по сайту..." class="search-input">
-            <button type="submit" class="search-button">Найти</button>
-        </form>
-        
-    </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <title>Кошки</title>
+    <link rel="icon" href="images/logo2.webp" type="images/logo2.webp">
+    <link rel="shortcut icon" href="fimages/logo2.webp" type="images/logo2.webp">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    <div class="content">
+        <header class="header container">
+            <div class="header__left">
+                <div class="header__logo-wrap" href="index.html">
+                    <img class="header__logo" src="images/logo2.webp" alt="логотип сайта" width="100">
+                    <h1 class="header__title">Kittens</h1>
+                </div>
+                <div class="header__buttons">
+                    <a class="header__button" href="#">Вход</a>
+                    <a class="header__button" href="#">Регистрация</a>
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <!-- <li class="menu__item menu__item--active"> <a class="menu__link" href="#home">Главная</a>
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#about">О нас</a>
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#contact">Контакты</a>
+                </li>-->
+                    </ul>
+                </nav>
+            </div>
+            <form class="search-form" action="/search" method="get" class="search-form">
+                <input type="text" name="q" placeholder="Поиск по сайту..." class="search-input">
+                <button type="submit" class="search-button">Найти</button>
+            </form>
+        </header>
+        <main class="main container">
+            <section class="hero">
+                <h2>Добро пожаловать в мир кошек!</h2>
+                <p>Здесь вы найдете информацию о породах кошек.</p>
+            </section>
+        </main>
+        <section class="volonter">
+            <div class="volonter__block">
+                <h1 class="volonter__title">Помоги котикам</h1>
+                <p class="volonter__text"> </p>
+                <button class="volonter__button button">Стать волонтером</button>
+            </div>
+            <img class="volonter__img" src="images/volonter.jpg" alt="котенок" class="volonter__img" width="500"
+                height="500">
+        </section>
+        <div class="applications" hidden>
+            <section class="application">
+                <div class="application__wrap">
+                    <h3 class="application__title">
+                        Запишитесь в волонтеры
+                    </h3>
+                    <p class="application__text">Помочь может каждый</p>
+                </div>
+                <form action="/" class="application__form">
+                    <input class="application__input" type="text" placeholder="Имя">
+                    <input class="application__input" type="tel" placeholder="Телефон">
+                    <input class="application__input" type="email" placeholder="E-mail">
+                    <button class="application__button button">Отправить заявку</button>
+                </form>
+            </section>
+        </div>
+        <section class="about">
+            <h2 class="about__title"></h2>
+            <p class="about__name">Наша цель-распространить любовь к кошкам.</p>
+        </section>
+
+        <footer class="footer container">
+            <section class="contact">
+                <h2 class="contact__title"></h2>
+                <p class="contact__name">Вы можете связаться с нами по электронной почте: <a
+                        href="mailto:info@catbreeds.com">info@catbreeds.com</a></p>
+            </section>
+            <p class="footer__name">2025 Kittens | Все права защищены</p>
+        </footer>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

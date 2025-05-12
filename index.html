@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,
@@ -10,127 +11,131 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
     <div class="preloader">
         <div class="loader"></div>
     </div>
     <div class="content">
-    <header class="header container">
-        <div class="header__left">
-        <div class="header__logo-wrap" href="index.html">
-            <img class="header__logo" src="images/logo2.webp" alt="логотип сайта" width="100">
-            <h1 class="header__title">Kittens</h1>
-        </div>
-        <div class="header__buttons">
-            <a class="header__button" href="#">Вход</a>
-            <a class="header__button" href="#">Регистрация</a>
-        </div>
-        <nav class="header__menu">
-            <ul class="header__list">
-                <!-- <li class="menu__item menu__item--active"> <a class="menu__link" href="#home">Главная</a>
+        <header class="header container">
+            <div class="header__left">
+                <div class="header__logo-wrap" href="index.html">
+                    <img class="header__logo" src="images/logo2.webp" alt="логотип сайта" width="100">
+                    <h1 class="header__title">Kittens</h1>
+                </div>
+                <div class="header__buttons">
+                    <a class="header__button" href="#">Вход</a>
+                    <a class="header__button" href="#">Регистрация</a>
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <!-- <li class="menu__item menu__item--active"> <a class="menu__link" href="#home">Главная</a>
                 </li>
                 <li class="menu__item"><a class="menu__link" href="#about">О нас</a>
                 </li>
                 <li class="menu__item"><a class="menu__link" href="#contact">Контакты</a>
                 </li>-->
-            </ul>
-        </nav></div>
-        <form class="search-form"  action="/search" method="get" class="search-form">
-            <input type="text" name="q" placeholder="Поиск по сайту..." class="search-input">
-            <button type="submit" class="search-button">Найти</button>
-        </form>    
-    </header>
-    <main class="main container">
-        <section class="hero">
-            <h2>Добро пожаловать в мир кошек!</h2>
-            <p>Здесь вы найдете информацию о породах кошек.</p>
-        </section>
-        <section class="images"> 
-            <h2 class="images__title">Милые котики дня</h2>
-            <ul class="images__list"> 
-
-                <!-- Здесь будет код -->
-
-            </ul>
-        </section>
-        <section class="popular__cats">
-            <h2 class="popular__cats__title">Самые популярные породы</h2>
-            <ul class="popular__cats__card">
-                <li class="popular__cats__item">
-                    <img src="images/persidskaya.jpg" alt="Персидская" class="popular__cats__img">
-                    <h3 class="popular__cats__suptitle">Кошка 1</h3>
-                    <p class="popular__cats__test">известна своей шикарной и длинной шерстью, а также спокойным характером </p>
-                    <button class="popular__cats__link" type="button">Подробнее</button>
-                </li>
-                <li class="popular__cats__item">
-                    <img src="images/mainkun.jpg" alt="Мейн-кун" class="popular__cats__img">
-                    <h3 class="popular__cats__suptitle">Кошка 2</h3>
-                    <p class="popular__cats__test">отличается большими размерами и густой шерстью</p>
-                    <button class="popular__cats__link" type="button">Подробнее</button>
-                </li>
-                <li class="popular__cats__item">
-                    <img src="images/regdoll.jpg" alt="Рэгдолл" class="popular__cats__img">
-                    <h3 class="popular__cats__suptitle">Кошка 3</h3>
-                    <p class="popular__cats__test">может расслаблять все свои мышцы, когда находится на руках хозяина</p>
-                    <button class="popular__cats__link" type="button">Подробнее</button>
-                </li>
-                <li class="popular__cats__item">
-                    <img src="images/siamskaya.jpg" alt="Сиамская" class="popular__cats__img">
-                    <h3 class="popular__cats__suptitle">Кошка 4</h3>
-                    <p class="popular__cats__test">элегантность и общительность присуще сиамской кошке</p>
-                    <button class="popular__cats__link" type="button">Подробнее</button>
-                </li>
-                <li class="popular__cats__item">
-                    <img src="images/abissinskaya.jpg" alt="Абиссинская" class="popular__cats__img">
-                    <h3 class="popular__cats__suptitle">Кошка 5</h3>
-                    <p class="popular__cats__test">подойдет тем хозяевам, который любят проводить время активно</p>
-                    <button class="popular__cats__link" type="button">Подробнее</button>             
-                </li>
-                <li class="popular__cats__item">
-                    <img src="images/britanskaya.jpg" alt="Британская короткошерстная" class="popular__cats__img">
-                    <h3 class="popular__cats__suptitle">Кошка 6</h3>
-                    <p class="popular__cats__test">этих животных можно назвать кошками настроения</p>
-                    <button class="popular__cats__link" type="button">Подробнее</button>     
-                </li>
-                <li class="popular__cats__item">
-                    <img src="images/shotlandskaya.jpg"  alt="Шотландская вислоухая" class="popular__cats__img">
-                    <h3 class="popular__cats__suptitle">Кошка 7</h3>
-                    <p class="popular__cats__test">уникальный внешний вид придают загнутые вперед ушки</p>
-                    <button class="popular__cats__link" type="button">Подробнее</button> 
-                </li>
-                <li class="popular__cats__item">
-                    <img src="images/kanadskiy_sfinks.jpg" alt="Канадский сфинкс" class="popular__cats__img">
-                    <h3 class="popular__cats__suptitle">Кошка 8</h3>
-                    <p class="popular__cats__test">так называемая «лысая» кошка</p>
-                    <button class="popular__cats__link" type="button">Подробнее</button>
-                </li>
-                <li class="popular__cats__item">
-                    <img src="images/orientalnaya.jpg" alt="Ориентальная" class="popular__cats__img">
-                    <h3 class="popular__cats__suptitle">Кошка 10</h3>
-                    <p class="popular__cats__test">нужно повышенное внимание хозяев</p>
-                    <button class="popular__cats__link" type="button">Подробнее</button>
-                </li> 
-            </ul>
-            <div class="popular__cats__button">
-                <button class="popular__cats__left">
-                    <img src="" alt="" class="popular__cats__left-swiper">
-                    <span class="arrow__left"></span>
-                </button>
-                <button class="popular__cats__right">
-                    <img src="" alt="" class="popular__cats__right-swiper">
-                    <span class="arrow__right"> </span>
-                </button>
+                    </ul>
+                </nav>
             </div>
-        </section>
+            <form class="search-form" action="/search" method="get" class="search-form">
+                <input type="text" name="q" placeholder="Поиск по сайту..." class="search-input">
+                <button type="submit" class="search-button">Найти</button>
+            </form>
+        </header>
+        <main class="main container">
+            <section class="hero">
+                <h2>Добро пожаловать в мир кошек!</h2>
+                <p>Здесь вы найдете информацию о породах кошек.</p>
+            </section>
+            <section class="images">
+                <h2 class="images__title">Милые котики дня</h2>
+                <ul class="images__list">
+
+                    <!-- Здесь будет код -->
+
+                </ul>
+            </section>
+            <section class="popular__cats">
+                <h2 class="popular__cats__title">Самые популярные породы</h2>
+                <ul class="popular__cats__card">
+                    <li class="popular__cats__item">
+                        <img src="images/persidskaya.jpg" alt="Персидская" class="popular__cats__img">
+                        <h3 class="popular__cats__suptitle">Кошка 1</h3>
+                        <p class="popular__cats__test">известна своей шикарной и длинной шерстью, а также спокойным
+                            характером </p>
+                        <button class="popular__cats__link" type="button">Подробнее</button>
+                    </li>
+                    <li class="popular__cats__item">
+                        <img src="images/mainkun.jpg" alt="Мейн-кун" class="popular__cats__img">
+                        <h3 class="popular__cats__suptitle">Кошка 2</h3>
+                        <p class="popular__cats__test">отличается большими размерами и густой шерстью</p>
+                        <button class="popular__cats__link" type="button">Подробнее</button>
+                    </li>
+                    <li class="popular__cats__item">
+                        <img src="images/regdoll.jpg" alt="Рэгдолл" class="popular__cats__img">
+                        <h3 class="popular__cats__suptitle">Кошка 3</h3>
+                        <p class="popular__cats__test">может расслаблять все свои мышцы, когда находится на руках
+                            хозяина</p>
+                        <button class="popular__cats__link" type="button">Подробнее</button>
+                    </li>
+                    <li class="popular__cats__item">
+                        <img src="images/siamskaya.jpg" alt="Сиамская" class="popular__cats__img">
+                        <h3 class="popular__cats__suptitle">Кошка 4</h3>
+                        <p class="popular__cats__test">элегантность и общительность присуще сиамской кошке</p>
+                        <button class="popular__cats__link" type="button">Подробнее</button>
+                    </li>
+                    <li class="popular__cats__item">
+                        <img src="images/abissinskaya.jpg" alt="Абиссинская" class="popular__cats__img">
+                        <h3 class="popular__cats__suptitle">Кошка 5</h3>
+                        <p class="popular__cats__test">подойдет тем хозяевам, который любят проводить время активно</p>
+                        <button class="popular__cats__link" type="button">Подробнее</button>
+                    </li>
+                    <li class="popular__cats__item">
+                        <img src="images/britanskaya.jpg" alt="Британская короткошерстная" class="popular__cats__img">
+                        <h3 class="popular__cats__suptitle">Кошка 6</h3>
+                        <p class="popular__cats__test">этих животных можно назвать кошками настроения</p>
+                        <button class="popular__cats__link" type="button">Подробнее</button>
+                    </li>
+                    <li class="popular__cats__item">
+                        <img src="images/shotlandskaya.jpg" alt="Шотландская вислоухая" class="popular__cats__img">
+                        <h3 class="popular__cats__suptitle">Кошка 7</h3>
+                        <p class="popular__cats__test">уникальный внешний вид придают загнутые вперед ушки</p>
+                        <button class="popular__cats__link" type="button">Подробнее</button>
+                    </li>
+                    <li class="popular__cats__item">
+                        <img src="images/kanadskiy_sfinks.jpg" alt="Канадский сфинкс" class="popular__cats__img">
+                        <h3 class="popular__cats__suptitle">Кошка 8</h3>
+                        <p class="popular__cats__test">так называемая «лысая» кошка</p>
+                        <button class="popular__cats__link" type="button">Подробнее</button>
+                    </li>
+                    <li class="popular__cats__item">
+                        <img src="images/orientalnaya.jpg" alt="Ориентальная" class="popular__cats__img">
+                        <h3 class="popular__cats__suptitle">Кошка 10</h3>
+                        <p class="popular__cats__test">нужно повышенное внимание хозяев</p>
+                        <button class="popular__cats__link" type="button">Подробнее</button>
+                    </li>
+                </ul>
+                <div class="popular__cats__button">
+                    <button class="popular__cats__left">
+                        <img src="" alt="" class="popular__cats__left-swiper">
+                        <span class="arrow__left"></span>
+                    </button>
+                    <button class="popular__cats__right">
+                        <img src="" alt="" class="popular__cats__right-swiper">
+                        <span class="arrow__right"> </span>
+                    </button>
+                </div>
+            </section>
 
 
 
-        <h2 class="popular__cats__title"> Топ-3 самых дорогих пород</h2>
-        <section class="breeds">
-            <ul class="breeds__list">
-            <!--<div class="breeds__card">
+            <h2 class="popular__cats__title"> Топ-3 самых дорогих пород</h2>
+            <section class="breeds">
+                <ul class="breeds__list">
+                    <!--<div class="breeds__card">
                 <img class="breeds__image" src="images/savanna.jpg" alt="Саванна" width="200">
-                <h3 class="breeds__name" href="savanna.html">Саванна</a>
+                <h3 class="breeds__name">Саванна</h3>
                 <p class ="breeds__price">1 300 000 руб</p>
                 <p class ="breeds__description">Саванна – близкий родственник африканского сервала. Это не только одна из самых дорогих кошек, 
                     но и одна из самых больших. При должном воспитании очень дружелюбные, прекрасно ладят с детьми. А еще они долгожители: 
@@ -151,231 +156,244 @@
                 <p class ="breeds__description">Чаузи, обладая внешностью маленькой версии дикой пумы, имеет дружелюбный характер, поэтому идеальна в качестве компаньона, если не забывать о ее происхождении.
                     Чаузи прекрасно адаптируются к жизни с человеком.</p>
             </div>-->
-        </ul>
-        </section>
-<section class="cats">
-        <div class="cat-card">
-            <img src=" images/cornish.webp " alt="Корниш-рекс" class="cat-image">
-            <div class="cat-name">Корниш-рекс</div>
-            <div class="cat__description" hidden> Мяу</div>
-        </div>
-        <div class="cat-card">
-            <img src=" images/elf.webp " alt="Эльф" class="cat-image">
-            <div class="cat-name">Эльф</div>
-            <div class="cat__description" hidden> Мяу</div>
-        </div>
-        <div class="cat-card">
-            <img src=" images/oriental.webp" alt="Ориентальная кошка" class="cat-image">
-            <div class="cat-name">Ориентальная кошка</div>
-            <div class="cat__description" hidden> Мяу</div>
-        </div>
-        <div class="cat-card">
-            <img src=" images/abissin.webp " alt="Абиссинская" class="cat-image">
-            <div class="cat-name">Абиссинская</div>
-            <div class="cat__description" hidden> Мяу</div>
-        </div>
-        <div class="cat-card">
-            <img src=" images/american_kerl.jpg " alt="Американский керл" class="cat-image">
-            <div class="cat-name">Американский керл</div>
-            <div class="cat__description" hidden> Мяу</div>
-        </div>
-        <div class="cat-card">
-            <img src=" images/bombei.jpg " alt="Бомбейская" class="cat-image">
-            <div class="cat-name">Бомбейская</div>
-            <div class="cat__description" hidden> Мяу</div>
-        </div>
-        <div class="cat-card">
-            <img src=" images/burmilla.jpg " alt="Бурмилла" class="cat-image">
-            <div class="cat-name">Бурмилла</div>
-            <div class="cat__description" hidden> Мяу</div>
-        </div>
-        <div class="cat-card">
-            <img src=" images/havanabraun.jpg " alt="Гавана браун" class="cat-image">
-            <div class="cat-name">Гавана браун</div>
-            <div class="cat__description" hidden> Мяу</div>
-        </div>
-        <div class="cat-card">
-            <img src=" images/devon-rex.jpg " alt="Девон-рекс" class="cat-image">
-            <div class="cat-name">Девон-рекс</div>
-            <div class="cat__description" hidden> Мяу</div>
-        </div>
-        <div class="cat-card">
-            <img src=" images/persian.jpg " alt="Персидская" class="cat-image">
-            <div class="cat-name">Персидская</div>
-            <div class="cat__description" hidden> Мяу</div>
-        </div>
-        <div class="cat-card">
-            <img src="images/kimrik.jpg" alt="Кимрик" class="cat-image">
-            <div class="cat-name">Кимрик</div>
-            <div class="cat__description" hidden> Мяу</div>
-        </div>
-        <div class="cat-card">
-            <img src="images/bambino.jpg" alt="Бамбино" class="cat-image">
-            <div class="cat-name">Бамбино</div>
-            <div class="cat__description" hidden> Мяу</div>
-        </div>
-        <div class="cat-card">
-            <img src="images/bobteil.jpg" alt="Американский бобтейл" class="cat-image">
-            <div class="cat-name">Американский бобтейл</div>
-            <div class="cat__description" hidden> Мяу</div>
-        </div>
-        <div class="cat-card">
-            <img src="images/korat.jpg" alt="Корат" class="cat-image">
-            <div class="cat-name">Корат</div>
-            <div class="cat__description" hidden> Мяу</div>
-        </div>
-        <div class="cat-card">
-            <img src="images/kinkalou.jpg" alt="Кинкалоу" class="cat-image">
-            <div class="cat-name">Кинкалоу</div>
-            <div class="cat__description" hidden> Мяу</div>
-        </div>
-</section>
-    
+                </ul>
+            </section>
+            <section class="cats">
+                <div class="cat-card">
+                    <img src=" images/cornish.webp " alt="Корниш-рекс" class="cat-image">
+                    <div class="cat-name"> <a href="cornishrex.html">Корниш-рекс </a></div>
+                    <div class="cat__description" hidden> Мяу</div>
+                </div>
+                <div class="cat-card">
+                    <img src=" images/elf.webp " alt="Эльф" class="cat-image">
+                    <div class="cat-name">Эльф</div>
+                    <div class="cat__description" hidden> Мяу</div>
+                </div>
+                <div class="cat-card">
+                    <img src=" images/oriental.webp" alt="Ориентальная кошка" class="cat-image">
+                    <div class="cat-name">Ориентальная кошка</div>
+                    <div class="cat__description" hidden> Мяу</div>
+                </div>
+                <div class="cat-card">
+                    <img src=" images/abissin.webp " alt="Абиссинская" class="cat-image">
+                    <div class="cat-name">Абиссинская</div>
+                    <div class="cat__description" hidden> Мяу</div>
+                </div>
+                <div class="cat-card">
+                    <img src=" images/american_kerl.jpg " alt="Американский керл" class="cat-image">
+                    <div class="cat-name">Американский керл</div>
+                    <div class="cat__description" hidden> Мяу</div>
+                </div>
+                <div class="cat-card">
+                    <img src=" images/bombei.jpg " alt="Бомбейская" class="cat-image">
+                    <div class="cat-name">Бомбейская</div>
+                    <div class="cat__description" hidden> Мяу</div>
+                </div>
+                <div class="cat-card">
+                    <img src=" images/burmilla.jpg " alt="Бурмилла" class="cat-image">
+                    <div class="cat-name">Бурмилла</div>
+                    <div class="cat__description" hidden> Мяу</div>
+                </div>
+                <div class="cat-card">
+                    <img src=" images/havanabraun.jpg " alt="Гавана браун" class="cat-image">
+                    <div class="cat-name">Гавана браун</div>
+                    <div class="cat__description" hidden> Мяу</div>
+                </div>
+                <div class="cat-card">
+                    <img src=" images/devon-rex.jpg " alt="Девон-рекс" class="cat-image">
+                    <div class="cat-name">Девон-рекс</div>
+                    <div class="cat__description" hidden> Мяу</div>
+                </div>
+                <div class="cat-card">
+                    <img src=" images/persian.jpg " alt="Персидская" class="cat-image">
+                    <div class="cat-name">Персидская</div>
+                    <div class="cat__description" hidden> Мяу</div>
+                </div>
+                <div class="cat-card">
+                    <img src="images/kimrik.jpg" alt="Кимрик" class="cat-image">
+                    <div class="cat-name">Кимрик</div>
+                    <div class="cat__description" hidden> Мяу</div>
+                </div>
+                <div class="cat-card">
+                    <img src="images/bambino.jpg" alt="Бамбино" class="cat-image">
+                    <div class="cat-name">Бамбино</div>
+                    <div class="cat__description" hidden> Мяу</div>
+                </div>
+                <div class="cat-card">
+                    <img src="images/bobteil.jpg" alt="Американский бобтейл" class="cat-image">
+                    <div class="cat-name">Американский бобтейл</div>
+                    <div class="cat__description" hidden> Мяу</div>
+                </div>
+                <div class="cat-card">
+                    <img src="images/korat.jpg" alt="Корат" class="cat-image">
+                    <div class="cat-name">Корат</div>
+                    <div class="cat__description" hidden> Мяу</div>
+                </div>
+                <div class="cat-card">
+                    <img src="images/kinkalou.jpg" alt="Кинкалоу" class="cat-image">
+                    <div class="cat-name">Кинкалоу</div>
+                    <div class="cat__description" hidden> Мяу</div>
+                </div>
+            </section>
 
-<section class="section card card--slider swiper">
-    <div class="card__list card__list--slider swiper-wrapper">
-        <a class="card__item swiper-slide" href='#'>
-            <span class="card__icon"> 
-                <img src="images/spasenie_nika.webp " alt="Ника" width="30" height="30">
-            </span>
-            <h3 class="spasenie__title">"Ника"</h3>
-            <p class="spasenie__description">Благотворительный фонд спасает бездомных животных более 10 лет. За это время команда открыла два собственных приюта и пристроила более семи тысяч хвостатых. </p>
-        </a>
-        <a class="card__item swiper-slide" href='#'>
-            <span class="card__icon"> 
-                <img src="images/spasenie_rei.webp" alt="«Рэй»" width="30" height="30">
-            </span>
-            <h3 class="spasenie__title">"Рэй"</h3>
-            <p class="spasenie__description">С 2015 года фонд направил более 156 миллионов на помощь бездомным животным. Сегодня организация поддерживает около 40 приютов в Москве, Подмосковье и других близлежащих регионах. </p>
-        </a>
-        <a class="card__item swiper-slide" href='#'>
-            <span class="card__icon"> 
-                <img src="images/spasenie_dingo.jpg" alt="«Динго»" width="30" height="30">
-            </span>
-            <h3 class="spasenie__title">«Динго»</h3>
-            <p class="spasenie__description">В 2012 г. стартовал уникальный проект помощи животным у людей, страдающих патологическим накопительством животных. Его цель это предотвращения увеличения численности кошек и собак в таких жилищах путем единовременной стерилизации всех животных. </p>
-        </a>
-        <a class="card__item swiper-slide" href='#'>
-            <span class="card__icon"> 
-                <img src="images/spasenie_nadegda.jpg" alt="«Дарящие надежду»" width="30" height="30">
-            </span>
-            <h3 class="spasenie__title">«Дарящие надежду»</h3>
-            <p class="spasenie__description">Благотворительный фонд спасает бездомных животных после несчастных случаев. В 2023 году организация приобрела и передала в приюты более 98 тонн различных кормов.  </p>
-        </a>
-        <a class="card__item swiper-slide" href='#'>
-            <span class="card__icon"> 
-                <img src="images/spasenie_rusdog.webp" alt="«РусДог»" width="30" height="30">
-            </span>
-            <h3 class="spasenie__title">«РусДог»</h3>
-            <p class="spasenie__description">«РусДог» — региональная общественная организация защиты животных, которая оказывает помощь бездомным животным. Организация начала свою деятельность в 2009 году как волонтёрское объединение.  </p>
-        </a>
-    </div>
-    <div class="swiper-pagination"></div>
+
+            <section class="section card card--slider swiper">
+                <div class="card__list card__list--slider swiper-wrapper">
+                    <a class="card__item swiper-slide" href='#'>
+                        <span class="card__icon">
+                            <img src="images/spasenie_nika.webp " alt="Ника" width="30" height="30">
+                        </span>
+                        <h3 class="spasenie__title">"Ника"</h3>
+                        <p class="spasenie__description">Благотворительный фонд спасает бездомных животных более 10 лет.
+                            За это время команда открыла два собственных приюта и пристроила более семи тысяч хвостатых.
+                        </p>
+                    </a>
+                    <a class="card__item swiper-slide" href='#'>
+                        <span class="card__icon">
+                            <img src="images/spasenie_rei.webp" alt="«Рэй»" width="30" height="30">
+                        </span>
+                        <h3 class="spasenie__title">"Рэй"</h3>
+                        <p class="spasenie__description">С 2015 года фонд направил более 156 миллионов на помощь
+                            бездомным животным. Сегодня организация поддерживает около 40 приютов в Москве, Подмосковье
+                            и других близлежащих регионах. </p>
+                    </a>
+                    <a class="card__item swiper-slide" href='#'>
+                        <span class="card__icon">
+                            <img src="images/spasenie_dingo.jpg" alt="«Динго»" width="30" height="30">
+                        </span>
+                        <h3 class="spasenie__title">«Динго»</h3>
+                        <p class="spasenie__description">В 2012 г. стартовал уникальный проект помощи животным у людей,
+                            страдающих патологическим накопительством животных. Его цель это предотвращения увеличения
+                            численности кошек и собак в таких жилищах путем единовременной стерилизации всех животных.
+                        </p>
+                    </a>
+                    <a class="card__item swiper-slide" href='#'>
+                        <span class="card__icon">
+                            <img src="images/spasenie_nadegda.jpg" alt="«Дарящие надежду»" width="30" height="30">
+                        </span>
+                        <h3 class="spasenie__title">«Дарящие надежду»</h3>
+                        <p class="spasenie__description">Благотворительный фонд спасает бездомных животных после
+                            несчастных случаев. В 2023 году организация приобрела и передала в приюты более 98 тонн
+                            различных кормов. </p>
+                    </a>
+                    <a class="card__item swiper-slide" href='#'>
+                        <span class="card__icon">
+                            <img src="images/spasenie_rusdog.webp" alt="«РусДог»" width="30" height="30">
+                        </span>
+                        <h3 class="spasenie__title">«РусДог»</h3>
+                        <p class="spasenie__description">«РусДог» — региональная общественная организация защиты
+                            животных, которая оказывает помощь бездомным животным. Организация начала свою деятельность
+                            в 2009 году как волонтёрское объединение. </p>
+                    </a>
+                </div>
+                <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
-</section>
-</main>
+            </section>
+        </main>
 
 
-<section class="volonter">
-    <div class="volonter__block">
-        <h1 class="volonter__title">Помоги котикам</h1>
-        <p class="volonter__text"> </p>
-        <button class="volonter__button button">Стать волонтером</button>
-    </div>
-    <img class="volonter__img" src="images/volonter.jpg" alt="котенок" class="volonter__img" width="500" height="500"> 
-</section>
-<div class="applications" hidden>
-    <section class="application"> 
-        <div class="application__wrap"> 
-            <h3 class="application__title">
-                Запишитесь в волонтеры 
-            </h3>
-            <p class="application__text">Помочь может каждый</p>
-        </div>
-        <form action="/" class="application__form">
-            <input class="application__input" type="text" placeholder="Имя">
-            <input class="application__input" type="tel" placeholder="Телефон">
-            <input class="application__input" type="email" placeholder="E-mail">
-            <button class="application__button button">Отправить заявку</button>
-        </form>
-    </section>
-</div>
-<section class="about">
-    <h2 class="about__title"></h2>
-    <p class="about__name">Наша цель-распространить любовь к кошкам.</p>
-</section>
-
-<footer class="footer container">
-    <section class="contact">
-        <h2 class="contact__title"></h2>
-        <p class="contact__name">Вы можете связаться с нами по электронной почте: <a
-                href="mailto:info@catbreeds.com">info@catbreeds.com</a></p>
-    </section>
-    <p class="footer__name">2025 Kittens | Все права защищены</p>
-</footer>
-
-<!-- Формы -->
-<div class="dialog dialog--layout" hidden>
-    <div class="dialog__content">
-        <button class="popup__close" type="button" data-close><img src="images/icon/close.svg"
-                alt="Закрыть окно" width="24" height="24"></button>
-        <!-- Форма "Войдите в профиль" -->
-        <section class="popup" id="popup-select">
-            <h2 class="popup__title">Войдите в профиль</h2>
-            <p class="popup__desc">Добавлять рецепты могут только зарегистрированные пользователи.</p>
-            <div class="popup__buttons">
-                <button class="button button--accent" type="button" data-login>Войти</button>
-                <button class="button" type="button" data-registration>Регистрация</button>
+        <section class="volonter">
+            <div class="volonter__block">
+                <h1 class="volonter__title">Помоги котикам</h1>
+                <p class="volonter__text"> </p>
+                <button class="volonter__button button">Стать волонтером</button>
             </div>
+            <img class="volonter__img" src="images/volonter.jpg" alt="котенок" class="volonter__img" width="500"
+                height="500">
         </section>
-        <!--/ Форма "Войдите в профиль" -->
-        <!-- Форма "Регистрация" -->
-        <section class="popup" id="popup-registration" hidden>
-            <h2 class="popup__title popup__title--registration">Регистрация</h2>
-            <form class="popup__form form" action="/" method="post" id="registration-form">
-                <input class="form__field" type="text" name="username" placeholder="Имя" id="username" required>
-                <input class="form__field" type="text" name="login" placeholder="Логин" id="login" required>
-                <input class="form__field" type="email" name="email" placeholder="Адрес электронной почты"
-                    id="email" required>
-                <fieldset class="form__fieldset">
-                    <div class="form__field-block">
-                        <input class="form__field" type="password" name="password" placeholder="Пароль"
-                            id="password" required>
-                        <span class="form__field-alert">Минимум 8 символов</span>
+        <div class="applications" hidden>
+            <section class="application">
+                <div class="application__wrap">
+                    <h3 class="application__title">
+                        Запишитесь в волонтеры
+                    </h3>
+                    <p class="application__text">Помочь может каждый</p>
+                </div>
+                <form action="/" class="application__form">
+                    <input class="application__input" type="text" placeholder="Имя">
+                    <input class="application__input" type="tel" placeholder="Телефон">
+                    <input class="application__input" type="email" placeholder="E-mail">
+                    <button class="application__button button">Отправить заявку</button>
+                </form>
+            </section>
+        </div>
+        <section class="about">
+            <h2 class="about__title"></h2>
+            <p class="about__name">Наша цель-распространить любовь к кошкам.</p>
+        </section>
+
+        <footer class="footer container">
+            <section class="contact">
+                <h2 class="contact__title"></h2>
+                <p class="contact__name">Вы можете связаться с нами по электронной почте: <a
+                        href="mailto:info@catbreeds.com">info@catbreeds.com</a></p>
+            </section>
+            <p class="footer__name">2025 Kittens | Все права защищены</p>
+        </footer>
+
+        <!-- Формы -->
+        <div class="dialog dialog--layout" hidden>
+            <div class="dialog__content">
+                <button class="popup__close" type="button" data-close><img src="images/icon/close.svg"
+                        alt="Закрыть окно" width="24" height="24"></button>
+                <!-- Форма "Войдите в профиль" -->
+                <section class="popup" id="popup-select">
+                    <h2 class="popup__title">Войдите в профиль</h2>
+                    <p class="popup__desc">Добавлять рецепты могут только зарегистрированные пользователи.</p>
+                    <div class="popup__buttons">
+                        <button class="button button--accent" type="button" data-login>Войти</button>
+                        <button class="button" type="button" data-registration>Регистрация</button>
                     </div>
-                    <input class="form__field" type="password" name="repeat-password"
-                        placeholder="Повторите пароль" id="confirm-password" required>
-                </fieldset>
-                <p id="error-message" class="error-message"></p>
-                <fieldset class="form__buttons">
-                    <button class="button button--accent" type="submit">Зарегистрироваться</button>
-                    <button class="button button--close" data-close type="button">Отмена</button>
-                </fieldset>
-                <button class="button button--link" data-login type="button">У меня уже есть аккаунт</button>
-            </form>
-        </section>
-        <!--/ Форма "Регистрация" -->
-        <!-- Форма "Войти" -->
-        <section class="popup" id="popup-login" hidden>
-            <h2 class="popup__title">Войти</h2>
-            <form class="popup__form form" action="/" method="post">
-                <input class="form__field" type="text" name="login" placeholder="Логин" required>
-                <input class="form__field" type="password" name="current-password" placeholder="Пароль"
-                    required>
-                <fieldset class="form__buttons">
-                    <button class="button button--accent" type="submit">Войти</button>
-                    <button class="button button--close" data-close type="button">Отмена</button>
-                </fieldset>
-                <button class="button button--link" data-registration type="button">У меня еще нет
-                    аккаунта</button>
-            </form>
-        </section>
-        <!--/ Форма "Войти" -->
+                </section>
+                <!--/ Форма "Войдите в профиль" -->
+                <!-- Форма "Регистрация" -->
+                <section class="popup" id="popup-registration" hidden>
+                    <h2 class="popup__title popup__title--registration">Регистрация</h2>
+                    <form class="popup__form form" action="/" method="post" id="registration-form">
+                        <input class="form__field" type="text" name="username" placeholder="Имя" id="username" required>
+                        <input class="form__field" type="text" name="login" placeholder="Логин" id="login" required>
+                        <input class="form__field" type="email" name="email" placeholder="Адрес электронной почты"
+                            id="email" required>
+                        <fieldset class="form__fieldset">
+                            <div class="form__field-block">
+                                <input class="form__field" type="password" name="password" placeholder="Пароль"
+                                    id="password" required>
+                                <span class="form__field-alert">Минимум 8 символов</span>
+                            </div>
+                            <input class="form__field" type="password" name="repeat-password"
+                                placeholder="Повторите пароль" id="confirm-password" required>
+                        </fieldset>
+                        <p id="error-message" class="error-message"></p>
+                        <fieldset class="form__buttons">
+                            <button class="button button--accent" type="submit">Зарегистрироваться</button>
+                            <button class="button button--close" data-close type="button">Отмена</button>
+                        </fieldset>
+                        <button class="button button--link" data-login type="button">У меня уже есть аккаунт</button>
+                    </form>
+                </section>
+                <!--/ Форма "Регистрация" -->
+                <!-- Форма "Войти" -->
+                <section class="popup" id="popup-login" hidden>
+                    <h2 class="popup__title">Войти</h2>
+                    <form class="popup__form form" action="/" method="post">
+                        <input class="form__field" type="text" name="login" placeholder="Логин" required>
+                        <input class="form__field" type="password" name="current-password" placeholder="Пароль"
+                            required>
+                        <fieldset class="form__buttons">
+                            <button class="button button--accent" type="submit">Войти</button>
+                            <button class="button button--close" data-close type="button">Отмена</button>
+                        </fieldset>
+                        <button class="button button--link" data-registration type="button">У меня еще нет
+                            аккаунта</button>
+                    </form>
+                </section>
+                <!--/ Форма "Войти" -->
+            </div>
+        </div>
+        <!--/ Формы -->
     </div>
-</div>
-<!--/ Формы -->
-</div>
     <script src="scripts/script.js"></script>
 </body>
+
 </html>
