@@ -1,0 +1,27 @@
+.cats2_image { 
+    max-width: 300px; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    
+ }
+.cats2_description {
+    width: calc(100% - 320px); /* Оставляем пространство для изображения */ 
+    padding-left: 20px; }
+
+.container_cats2 {
+    display: flex;
+    align-items: center; /* Выравниваем элементы вертикально по центру */
+
+}
+.heart_wrapper{
+    display: flex; /* Используем Flexbox для расположения элементов в один ряд */
+    align-items: center; /* Выравниваем элементы по вертикальной оси */ 
+
+     
+}
+.heart_image { width: 30px; /* Ширина маленькой картинки */
+     height: auto; /* Сохраняет пропорции картинки */
+      margin-right: 20px; /* Отступ справа от картинки */
+      vertical-align: top;
+     } 
