@@ -6,12 +6,18 @@
     overflow: hidden;
     
 }
+.popular__cats{
+
+    margin-top: 60px; /* сверху */
+
+}
 .popular__cats__img{
     min-width: 360px;
 }
 .popular__cats__item{
     width: 360px;
    transition: top 0.2s linear;
+   
 }
 .popular__cats__link{
     border: none;
@@ -59,4 +65,7 @@
     border-top: 5px solid transparent; 
     border-bottom: 5px solid transparent; 
    
+}
+.popular__cats__title{
+    margin-top: 60px; /* сверху */
 }

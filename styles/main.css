@@ -49,12 +49,14 @@
     
 .hero {
         text-align: center;
-        padding: 40px 0;
+        padding: 20px;
         background-color: #f596c5;
+        color: aliceblue;
     }
     
  .hero h2 {
-        font-size: 2em
+        font-size: 25px
+        
     }
  
         

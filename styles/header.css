@@ -20,7 +20,7 @@
    }   
    .header__logo-wrap{
     text-decoration: none;
-    color: rgba(247, 43, 175, 0.975);
+    color: rgb(228, 54, 167);
     font-family: "Montserrat"
    }
    .header__title{
@@ -104,35 +104,12 @@
     padding: 20px;
 }
 header {
-    background-color: hsl(0, 0%, 94%);
+    background-color: white;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.search-form{
-    display: flex; /* гибкое отображение */
-    flex-direction: column; /* поставим все элементы вертикально*/
-    gap: 5px; /*добавим отступы между элементами */
-    width: 300px; /*укажем ширину всей формы*/
-    padding: 20px;
-    border: 1px solid #f370b1;
-    border-radius: 5px;
-  }
-.search-form input{
-    padding: 5px;
-    border-radius: 8px;
-    }
-.search-form textarea{
-        padding: 5px;
-        border-radius: 8px;
-        }
-.search-form button{
-            text-decoration: none;
-            border: 2px solid #fff;
-            border-radius: 8px;
-            padding: 5px;
-            background-color: #f370b1;
-            color: white;
-            cursor: pointer;
-            }
+
+
+            
