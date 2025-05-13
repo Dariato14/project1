@@ -25,3 +25,9 @@
       margin-right: 20px; /* Отступ справа от картинки */
       vertical-align: top;
      } 
+.cats2_section{
+    margin-top: 75px; /* сверху */
+}
+.cats2h1{
+    margin-bottom: 75px; /* снизу */
+}
