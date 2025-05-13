@@ -1,43 +1,133 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,
-        initial-scale=1.0">
-        <title>Кошки</title>
-        <link rel="icon" href="images/logo2.webp" type="images/logo2.webp">
-        <link rel="shortcut icon" href="fimages/logo2.webp" type="images/logo2.webp">
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-    <header class="header container">
-        <div class="header__left">
-        <div class="header__logo-wrap" href="index.html">
-            <img class="header__logo" src="images/logo2.webp" alt="логотип сайта" width="100">
-            <h1 class="header__title">Kittens</h1>
-        </div>
-        <div class="header__buttons">
-            <a class="header__button" href="#">Вход</a>
-            <a class="header__button" href="#">Регистрация</a>
-        </div>
-        <nav class="header__menu">
-            <ul class="menu">
-                <li class="menu__item menu__item--active">
-                    <a class="menu__link" href="#home">Главная</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#about">О нас</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#contact">Контакты</a>
-                </li>
-            </ul>
-        </nav></div>
 
-        <form class="search-form"  action="/search" method="get" class="search-form">
-            <input type="text" name="q" placeholder="Поиск по сайту..." class="search-input">
-            <button type="submit" class="search-button">Найти</button>
-        </form>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <title>Кошки</title>
+    <link rel="icon" href="images/logo2.webp" type="images/logo2.webp">
+    <link rel="shortcut icon" href="fimages/logo2.webp" type="images/logo2.webp">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    <div class="content">
+        <header class="header container">
+            <div class="header__left">
+                <div class="header__logo-wrap" href="index.html">
+                    <img class="header__logo" src="images/logo2.webp" alt="логотип сайта" width="100">
+                    <h1 class="header__title">Kittens</h1>
+                </div>
+                <div class="header__buttons">
+                    <a class="header__button" href="#">Вход</a>
+                    <a class="header__button" href="#">Регистрация</a>
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <!-- <li class="menu__item menu__item--active"> <a class="menu__link" href="#home">Главная</a>
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#about">О нас</a>
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#contact">Контакты</a>
+                </li>-->
+                    </ul>
+                </nav>
+            </div>
+            <form class="search-form" action="/search" method="get" class="search-form">
+                <input type="text" name="q" placeholder="Поиск по сайту..." class="search-input">
+                <button type="submit" class="search-button">Найти</button>
+            </form>
+        </header>
+        <main class="main container">
+            <h1 class="cats2h1">Саванна</h1>
+            <!-- Контейнер для картинки и описания -->
+            <div class="container_cats2">
+                <img class="cats2_image" src="images/savanna_cats2.jpg" alt="Фото Саванна">
+                <div class="cats2_description">
+                    
+                    <p>Саванна – гибридная американская кошка экзотического гепардового окраса, возглавляющая список самых дорогих домашних питомцев.</p>
+                </div>
+            </div>
+            <section class="cats2_section">
+                <h2>Краткая информация</h2>        
+                <div class="heart_wrapper">
+                    <img class="heart_image" src="images/heart.png" alt="Сердечко">
+                    <p class="heart_description"><strong>Название породы:</strong> Саванна (Ашера)</p>
+                </div>
+                <div class="heart_wrapper">
+                    <img class="heart_image" src="images/heart.png" alt="Сердечко">
+                    <p class="heart_description"><strong>Страна происхождения:</strong> США</p>
+                </div>
+                <div class="heart_wrapper">
+                    <img class="heart_image" src="images/heart.png" alt="Сердечко">
+                    <p class="heart_description"><strong>Вес:</strong> до 15 кг</p>
+                </div>
+                <div class="heart_wrapper">
+                    <img class="heart_image" src="images/heart.png" alt="Сердечко">
+                    <p class="heart_description"><strong>Продолжительность жизни:</strong> 12-20 лет</p>
+                </div>
+                </section>
+            <!-- История породы -->
+            <section class="cats2_section">
+            <h2>История происхождения</h2>
+            <p>Первый эксперимент по скрещиванию африканского сервала с сиамской кошкой имел место в 1986 году, на ферме пенсильванской заводчицы Джуди Френк. Женщина уже достаточно давно занималась разведением кустарниковых кошек, поэтому, чтобы немного «освежить кровь» питомцев, одолжила у своей знакомой Сьюзи Вудс самца сервала. Животное успешно справилось с поставленной задачей, но случилось непредвиденное: вместе с самками своего вида сервал умудрился покрыть и домашнюю кошку заводчицы.</p>
+            <p>Хозяйкой единственного котенка женского пола, появившегося на свет в результате этой необычной «любовной связи», стала Сьюзи Вудс. Именно она дала животному кличку Саванна, которая впоследствии и стала названием породы новых гибридных кошек. Кстати, сама Сьюзи не являлась профессиональным бридером, что не помешало ей в дальнейшем провести эксперимент по вязке своей питомицы с домашним котом и опубликовать пару статей на эту тему.</p>
+            <p>Основной вклад в развитие породы саванна был внесен Патриком Келли, купившим котенка у Сьюзи Вудс и привлекшим к разведению новых кошек опытного селекционера и заводчицу бенгалов – Джойс Сроуф. Уже в 1996 году Келли и Сроуф представили TICA (Интернациональная ассоциация кошек) новых необычных животных гепардового окраса. Они же разработали первый стандарт внешности саванн.</p>
+            <p>В 2001 году порода были официально зарегистрирована и, наконец, получила признание у крупнейших фелинологических ассоциаций, а бридер Джойс Сроуф приобрела мировую известность как основательница элитного кошачьего «клана».</p>
+            </section>
+            <section class="cats2_section">
+            <h2>Основные моменты</h2>
+            <div class="heart_wrapper">
+            <img class="heart_image" src="images/heart.png" alt="Сердечко">
+            <p class="heart_description"> Саванны относятся к категории гибридных животных, полученных в результате скрещивания самца африканского сервала с бенгальской кошкой.</p>
+            </div>
+            <div class="heart_wrapper">
+                <img class="heart_image" src="images/heart.png" alt="Сердечко">
+            <p>Главная черта характера саванн – исключительная преданность хозяину, чем они очень напоминают собак.</p>
+            </div>
+            <div class="heart_wrapper">
+                <img class="heart_image" src="images/heart.png" alt="Сердечко">
+            <p>Кошек этого вида отличают феноменальная память, живой ум и страсть к активному образу жизни.</p>
+            </div>
+            <div class="heart_wrapper">
+                <img class="heart_image" src="images/heart.png" alt="Сердечко">
+            <p>Саванны способны мирно сосуществовать на одной территории с другими животными, но приятельские отношения предпочитают выстраивать с собаками.</p>
+            </div>
+            <div class="heart_wrapper">
+                <img class="heart_image" src="images/heart.png" alt="Сердечко">
+            <p>Саванны страдают от одиночества и не приживутся в квартирах с дефицитом свободной площади.</p>
+            </div>
+            <div class="heart_wrapper">
+                <img class="heart_image" src="images/heart.png" alt="Сердечко">
+            <p>Легко привыкают к шлейке, что делает возможным выгул кошки на поводке.</p>
+            </div>
+            <div class="heart_wrapper">
+                <img class="heart_image" src="images/heart.png" alt="Сердечко">
+            <p>В 2007 году была представлена новая порода ашера, которая в действительности оказалась представительницей породы саванна. Это внесло небольшую путаницу, из-за которой многие считают ашеру отдельной породой.</p>
+            </div>
+        </section>
+        </main>
         
-    </header>
+        <section class="about">
+            <h2 class="about__title"></h2>
+            <p class="about__name">Наша цель-распространить любовь к кошкам.</p>
+        </section>
+
+        <footer class="footer container">
+            <section class="contact">
+                <h2 class="contact__title"></h2>
+                <p class="contact__name">Вы можете связаться с нами по электронной почте: <a
+                        href="mailto:info@catbreeds.com">info@catbreeds.com</a></p>
+            </section>
+            <p class="footer__name">2025 Kittens | Все права защищены</p>
+        </footer>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

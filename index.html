@@ -38,16 +38,20 @@
                     </ul>
                 </nav>
             </div>
-            <form class="search-form" action="/search" method="get" class="search-form">
-                <input type="text" name="q" placeholder="Поиск по сайту..." class="search-input">
-                <button type="submit" class="search-button">Найти</button>
-            </form>
+            
+        
         </header>
-        <main class="main container">
+        <main class="main container"> 
             <section class="hero">
-                <h2>Добро пожаловать в мир кошек!</h2>
-                <p>Здесь вы найдете информацию о породах кошек.</p>
+                <h2>Здесь вы найдете информацию о различных породах кошек</h2>
             </section>
+
+            <div class="search-container">
+                <form onsubmit="event.preventDefault(); alert('Вы искали: ' + this.search.value);">
+                    <input type="search" name="search" placeholder="Быстрый поиск породы" aria-label="Поиск"/>
+                    <button class="search-button" type="submit">Найти</button>
+                  </form>
+
             <section class="images">
                 <h2 class="images__title">Милые котики дня</h2>
                 <ul class="images__list">
@@ -64,26 +68,26 @@
                         <h3 class="popular__cats__suptitle">Кошка 1</h3>
                         <p class="popular__cats__test">известна своей шикарной и длинной шерстью, а также спокойным
                             характером </p>
-                        <button class="popular__cats__link" type="button">Подробнее</button>
+                            <a href="persidskaya.html"><button class="popular__cats__link" type="button">Подробнее</a></button>
                     </li>
                     <li class="popular__cats__item">
                         <img src="images/mainkun.jpg" alt="Мейн-кун" class="popular__cats__img">
                         <h3 class="popular__cats__suptitle">Кошка 2</h3>
                         <p class="popular__cats__test">отличается большими размерами и густой шерстью</p>
-                        <button class="popular__cats__link" type="button">Подробнее</button>
+                       <a href="mainkun.html"><button class="popular__cats__link" type="button">Подробнее</a></button>
                     </li>
                     <li class="popular__cats__item">
                         <img src="images/regdoll.jpg" alt="Рэгдолл" class="popular__cats__img">
                         <h3 class="popular__cats__suptitle">Кошка 3</h3>
                         <p class="popular__cats__test">может расслаблять все свои мышцы, когда находится на руках
                             хозяина</p>
-                        <button class="popular__cats__link" type="button">Подробнее</button>
+                        <a href="regdoll.html"><button class="popular__cats__link" type="button">Подробнее</a></button>
                     </li>
                     <li class="popular__cats__item">
                         <img src="images/siamskaya.jpg" alt="Сиамская" class="popular__cats__img">
                         <h3 class="popular__cats__suptitle">Кошка 4</h3>
                         <p class="popular__cats__test">элегантность и общительность присуще сиамской кошке</p>
-                        <button class="popular__cats__link" type="button">Подробнее</button>
+                        <a href="siamskaya.html"><button class="popular__cats__link" type="button">Подробнее</a></button>
                     </li>
                     <li class="popular__cats__item">
                         <img src="images/abissinskaya.jpg" alt="Абиссинская" class="popular__cats__img">
@@ -95,25 +99,25 @@
                         <img src="images/britanskaya.jpg" alt="Британская короткошерстная" class="popular__cats__img">
                         <h3 class="popular__cats__suptitle">Кошка 6</h3>
                         <p class="popular__cats__test">этих животных можно назвать кошками настроения</p>
-                        <button class="popular__cats__link" type="button">Подробнее</button>
+                        <a href="britanskayakorotkaya.html"><button class="popular__cats__link" type="button">Подробнее</a></button>
                     </li>
                     <li class="popular__cats__item">
                         <img src="images/shotlandskaya.jpg" alt="Шотландская вислоухая" class="popular__cats__img">
                         <h3 class="popular__cats__suptitle">Кошка 7</h3>
                         <p class="popular__cats__test">уникальный внешний вид придают загнутые вперед ушки</p>
-                        <button class="popular__cats__link" type="button">Подробнее</button>
+                        <a href="shotlandskayavisloyxaia.html"><button class="popular__cats__link" type="button">Подробнее</a></button>
                     </li>
                     <li class="popular__cats__item">
                         <img src="images/kanadskiy_sfinks.jpg" alt="Канадский сфинкс" class="popular__cats__img">
                         <h3 class="popular__cats__suptitle">Кошка 8</h3>
                         <p class="popular__cats__test">так называемая «лысая» кошка</p>
-                        <button class="popular__cats__link" type="button">Подробнее</button>
+                        <a href="kanadskiy_sfinks.html"><button class="popular__cats__link" type="button">Подробнее</a></button>
                     </li>
                     <li class="popular__cats__item">
                         <img src="images/orientalnaya.jpg" alt="Ориентальная" class="popular__cats__img">
                         <h3 class="popular__cats__suptitle">Кошка 10</h3>
                         <p class="popular__cats__test">нужно повышенное внимание хозяев</p>
-                        <button class="popular__cats__link" type="button">Подробнее</button>
+                        <a href="oriental.html"><button class="popular__cats__link" type="button">Подробнее</a></button>
                     </li>
                 </ul>
                 <div class="popular__cats__button">
@@ -234,6 +238,51 @@
                     <div class="cat-name">Кинкалоу</a></div>
                     <div class="cat__description" hidden> Мяу</div>
                 </div>
+                <div class="cat-card">
+                    <a href="mainkun.html"><img src="images/mainkun2.webp" alt="Мейн-кун" class="cat-image">
+                    <div class="cat-name">Мейн-кун</a></div>
+                    <div class="cat__description" hidden> Мяу</div>
+                </div>
+                <div class="cat-card">
+                   <a href="regdoll.html"><img src="images/regdoll2.webp" alt="Рэгдолл" class="cat-image">
+                    <div class="cat-name">Рэгдолл</a></div>
+                    <div class="cat__description" hidden> Мяу</div>
+                </div>
+                <div class="cat-card">
+                    <a href="siamskaya.html"><img src="images/siamskaya2.webp" alt="Сиамская" class="cat-image">
+                     <div class="cat-name">Сиамская кошка</a></div>
+                     <div class="cat__description" hidden> Мяу</div>
+                 </div>
+                 <div class="cat-card">
+                    <a href="britanskayakorotkaya.html"><img src="images/britanskayakorotkaya2.webp" alt="Британская короткошерстная" class="cat-image">
+                     <div class="cat-name">Британская короткошерстная</a></div>
+                     <div class="cat__description" hidden> Мяу</div>
+                 </div>
+                 <div class="cat-card">
+                    <a href="shotlandskayavisloyxaia.html"><img src="images/shotlandskaya2.webp" alt="Шотландская вислоухая" class="cat-image">
+                     <div class="cat-name">Шотландская вислоухая</a></div>
+                     <div class="cat__description" hidden> Мяу</div>
+                 </div>
+                 <div class="cat-card">
+                    <a href="kanadskiy_sfinks.html"><img src="images/kanadskiy_sfinks2.webp" alt="Канадский сфинкс" class="cat-image">
+                     <div class="cat-name">Канадский сфинкс</a></div>
+                     <div class="cat__description" hidden> Мяу</div>
+                 </div>
+                 <div class="cat-card">
+                    <a href="savanna.html"><img src="images/savanna2.webp" alt="Саванна" class="cat-image">
+                     <div class="cat-name">Саванна</a></div>
+                     <div class="cat__description" hidden> Мяу</div>
+                 </div>
+                 <div class="cat-card">
+                    <a href="karaket.html"><img src="images/karaket2.webp" alt="Каракет" class="cat-image">
+                     <div class="cat-name">Каракет</a></div>
+                     <div class="cat__description" hidden> Мяу</div>
+                 </div>
+                 <div class="cat-card">
+                    <a href="chauzy.html"><img src="images/chauzy2.webp" alt="Чаузи" class="cat-image">
+                     <div class="cat-name">Чаузи</a></div>
+                     <div class="cat__description" hidden> Мяу</div>
+                 </div>
             </section>
 
 
