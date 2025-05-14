@@ -196,7 +196,7 @@ if(nextButton){
         const headerList = headerMenu.querySelector('.header__list');
         const menuData = {
             link1: {
-                link: '#',
+                link: 'index.html',
                 title: 'Главная',
             },
             link2: {
@@ -216,7 +216,7 @@ if(nextButton){
         }
         for (const linkItem in menuData) {
             const link = menuData[linkItem];
-            const linkIndex = createLink(link.UrlLink, link.title);
+            const linkIndex = createLink(link.link, link.title);
             headerList.insertAdjacentHTML('beforeend', linkIndex);
 
         }
