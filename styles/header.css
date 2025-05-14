@@ -45,9 +45,10 @@
         padding: 10px 10px; /* Отступы */
         position: fixed; /* Фиксированное позиционирование */
         top: 0; /* Расположение вверху */
-        left: 0; /* Расположение слева */
-        width: 100%; /* Ширина на всю страницу */
+        left: 50%; /* Расположение слева */
+        
         z-index: 100; /* Уровень наложения, чтобы шапка была поверх другого контента */
+        transform: translateX(-50%);
        }
        .main {
         margin-top: 200px; /* Отступ сверху, чтобы содержимое не перекрывалось шапкой */
@@ -61,6 +62,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
+        width: 100%;
         justify-content: space-between;
     }
     .header__button {

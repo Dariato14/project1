@@ -142,13 +142,14 @@ if(nextButton){
                 name: 'Саванна',
                 price: '1 300 000 руб',
                 description: 'Саванна – близкий родственник африканского сервала. Это не только одна из самых дорогих кошек, но и одна из самых больших.',
-
+                page: 'savanna.html'
             },
             breed2: {
                 image: 'images/karaket.jpg',
                 name: 'Каракет',
                 price: '900 000 руб',
                 description: 'Каракет – самая крупная домашняя кошка, полученная в результате скрещивания домашней кошки со степной рысью.',
+                page: 'karaket.html'
 
             },
             breed3: {
@@ -156,20 +157,21 @@ if(nextButton){
                 name: 'Чаузи',
                 price: '1 000 000 руб',
                 description: 'Чаузи, обладая внешностью маленькой версии дикой пумы, имеет дружелюбный характер.',
+                page: 'chauzy.html'
 
             }
         };
 
         // Создаем функцию createCard, которая будет добавлять карточку. Внутри функции 4 переменные: image, name, price, description
-        const createCard = (image, name, price, description) => {
+        const createCard = (image, name, price, description, page) => {
             // Создаем переменную card, которая будет содержать HTML-код карточки и вставляем туда 4 переменные
             const card = `
-            <div class="breeds__card">
+            <a href="${page}" class="breeds__card">
                 <img class="breeds__image" src="${image}" alt="${name}" width="200">
                 <h3 class="breeds__name">${name}</h3>
                 <p class="breeds__price">${price}</p>
                 <p class="breeds__description">${description}</p>
-            </div>
+            </a>
         `;
             // Возвращаем значение переменной card
             return card;
@@ -180,7 +182,7 @@ if(nextButton){
             // Получаем данные одной карточки из объекта cardsBreedsData 
             const card = cardsBreedsData[cardKey];
             // создаем переменную cardElement и вызываем функцию createCard, куда передаем изображение, название, цену, описание и кнопку
-            const cardElement = createCard(card.image, card.name, card.price, card.description, card.button);
+            const cardElement = createCard(card.image, card.name, card.price, card.description, card.page);
             // с помощью метода insertAdjacentHTML добавляем созданный HTML-код в конец списка breedsList.
             breedsList.insertAdjacentHTML('beforeend', cardElement);
         }

@@ -1,5 +1,5 @@
 .cat-card {
-    margin: 40px;
+    margin: 30px;
 }
 .cat-image {
     width: 190px; /* Размер изображения */
@@ -20,5 +20,5 @@
     margin-top: 15px;
     text-align: center;
     color: #a6115b;
-    
+    flex-wrap: wrap;
 }
