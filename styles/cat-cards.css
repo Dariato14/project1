@@ -1,11 +1,15 @@
 .cat-card {
     margin: 30px;
+    width: 230px;
 }
 .cat-image {
     width: 190px; /* Размер изображения */
     height: 190px; /* Размер изображения */
     border-radius: 50%; /* Сделать изображение круглым */
     object-fit: cover; /* Сохранить пропорции изображения */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .cat-name {
     margin-top: 5px;
